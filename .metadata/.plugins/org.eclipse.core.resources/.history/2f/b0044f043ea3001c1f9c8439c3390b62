@@ -1,0 +1,5 @@
+package 복습2;
+
+public interface Inter1 {
+
+}

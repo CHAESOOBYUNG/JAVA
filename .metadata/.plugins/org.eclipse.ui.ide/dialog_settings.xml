@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ExternalProjectImportWizard">
+		<item key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED" value="true"/>
+		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_NESTED_PROJECTS" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID" value="false"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\Users\Chae Soobyung\Desktop\course\Java\workspace\복습"/>
+			<item value="C:\Users\Chae Soobyung\Desktop\course\Java\workspace\quiz"/>
+			<item value="C:\Users\Chae Soobyung\Desktop\course\Java\workspace\day12"/>
+			<item value="C:\Users\Chae Soobyung\Desktop\course\Java\workspace\day11"/>
+			<item value="C:\Users\Chae Soobyung\Desktop\course\Java\workspace\day10"/>
+			<item value="C:\Users\Chae Soobyung\Desktop\course\Java\workspace\day09"/>
+			<item value="C:\Users\Chae Soobyung\Desktop\course\Java\workspace\day08"/>
+			<item value="C:\Users\Chae Soobyung\Desktop\course\Java\workspace\day07"/>
+			<item value="C:\Users\Chae Soobyung\Desktop\course\Java\workspace\day06"/>
+			<item value="C:\Users\Chae Soobyung\Desktop\course\Java\workspace\day05"/>
+			<item value="C:\Users\Chae Soobyung\Desktop\course\Java\workspace\day04"/>
+			<item value="C:\Users\Chae Soobyung\Desktop\course\Java\workspace\day03"/>
+			<item value="C:\Users\Chae Soobyung\Desktop\course\Java\workspace\day02"/>
+			<item value="C:\Users\Chae Soobyung\Desktop\course\Java\workspace\day01"/>
+			<item value=""/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value="C:\Users\Chae Soobyung\Documents\카카오톡 받은 파일\chat_server.zip"/>
+			<item value=""/>
+			<item value="C:\Users\Chae Soobyung\Desktop\course\Java\workspace\workspace.zip"/>
+			<item value="C:\Users\Chae Soobyung\Downloads\JAVA day02.zip"/>
+		</list>
+	</section>
+	<section name="NewWizardAction">
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.jdt.ui.wizards.JavaProjectWizard"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+		</list>
+	</section>
+	<section name="ChooseWorkspaceDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="537"/>
+		<item key="DIALOG_Y_ORIGIN" value="209"/>
+	</section>
+	<section name="WORKBENCH_SETTINGS">
+		<list key="ENABLED_TRANSFERS">
+		</list>
+	</section>
+</section>
