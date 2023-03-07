@@ -1,0 +1,24 @@
+명령 프롬포트(cmd)에서 패키지 선언 (이것이 자바다 - 6.12 패키지(1) 강의 참고)
+C:\Users\Chae Soobyung>cd c:\temp
+
+c:\Temp>dir
+ C 드라이브의 볼륨에는 이름이 없습니다.
+ 볼륨 일련 번호: 5641-0B56
+
+ c:\Temp 디렉터리
+ 
+2023-03-02  오후 03:42    <DIR>          .
+2023-03-02  오후 03:42    <DIR>          ..
+2023-03-02  오후 02:55               192 Application.java
+2022-10-26  오후 03:51    <DIR>          AUtempR
+2023-01-31  오후 03:47               484 Hello.class
+2023-01-31  오후 03:50               371 Hello.java
+               3개 파일               1,047 바이트
+               3개 디렉터리  33,914,142,720 바이트 남음
+
+c:\Temp>javac -d . Application.java -encoding UTF8
+
+c:\Temp>java sec12.exam01_package_compile.Application
+애플리케이션을 실행합니다
+
+-> 완료 후 Navigator 창 접속 -> chap06/bin/sec12/exam01_package_compile 폴더 안에 Application.class 생성

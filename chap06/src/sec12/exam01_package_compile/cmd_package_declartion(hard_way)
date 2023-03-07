@@ -1,0 +1,82 @@
+명령 프롬포트(cmd)에서 패키지 선언 (이것이 자바다 - 6.12 패키지(1) 강의 참고)
+C:\Users\Chae Soobyung>cd c:\temp
+
+c:\Temp>dir
+ C 드라이브의 볼륨에는 이름이 없습니다.
+ 볼륨 일련 번호: 5641-0B56
+
+ c:\Temp 디렉터리
+
+2023-03-02  오후 03:42    <DIR>          .
+2023-03-02  오후 03:42    <DIR>          ..
+2023-03-02  오후 02:55               192 Application.java
+2022-10-26  오후 03:51    <DIR>          AUtempR
+2023-01-31  오후 03:47               484 Hello.class
+2023-01-31  오후 03:50               371 Hello.java
+               3개 파일               1,047 바이트
+               3개 디렉터리  33,914,142,720 바이트 남음
+
+c:\Temp>javac Application.java -encoding UTF8
+-> Application.class 생성( -encoding UTF8 추가로 작성)
+c:\Temp>java Application
+Error: Could not find or load main class Application
+Caused by: java.lang.NoClassDefFoundError: sec12/exam01_package_compile/Application (wrong name: Application)
+-> Application.class파일이 파일안에 있지 않고 단독적으로 나와있는 상태 -> 컴파일 오류 발생
+-> 해결방법
+   Temp파일 폴더에 sec12라는 이름의 새 폴더 추가 
+   -> sec12폴더에 exam01_package_compile라는 이름의 새 폴더 추가 
+   -> exam01_package_compile폴더에 Application.class 파일 넣기
+
+c:\Temp\sec12>dir
+ C 드라이브의 볼륨에는 이름이 없습니다.
+ 볼륨 일련 번호: 5641-0B56
+
+ c:\Temp\sec12 디렉터리
+
+2023-03-02  오후 04:03    <DIR>          .
+2023-03-02  오후 04:03    <DIR>          ..
+2023-03-02  오후 04:03    <DIR>          exam01_package_compile
+               0개 파일                   0 바이트
+               3개 디렉터리  33,914,560,512 바이트 남음
+
+c:\Temp\sec12>cd exam01_package_compile
+
+c:\Temp\sec12\exam01_package_compile>dir
+ C 드라이브의 볼륨에는 이름이 없습니다.
+ 볼륨 일련 번호: 5641-0B56
+
+ c:\Temp\sec12\exam01_package_compile 디렉터리
+
+2023-03-02  오후 04:03    <DIR>          .
+2023-03-02  오후 04:03    <DIR>          ..
+2023-03-02  오후 03:54               482 Application.class
+               1개 파일                 482 바이트
+               2개 디렉터리  33,914,417,152 바이트 남음
+
+c:\Temp\sec12\exam01_package_compile>java Application
+Error: Could not find or load main class Application
+Caused by: java.lang.NoClassDefFoundError: sec12/exam01_package_compile/Application (wrong name: Application)
+-> Application.class에서 바로 실행 불가 -> 상위 패키지(sec12)에서 실행 가능
+
+c:\Temp\sec12\exam01_package_compile>cd c:\temp
+
+c:\Temp>dir
+ C 드라이브의 볼륨에는 이름이 없습니다.
+ 볼륨 일련 번호: 5641-0B56
+
+ c:\Temp 디렉터리
+
+2023-03-02  오후 04:03    <DIR>          .
+2023-03-02  오후 04:03    <DIR>          ..
+2023-03-02  오후 02:55               192 Application.java
+2022-10-26  오후 03:51    <DIR>          AUtempR
+2023-01-31  오후 03:47               484 Hello.class
+2023-01-31  오후 03:50               371 Hello.java
+2023-03-02  오후 04:03    <DIR>          sec12
+               3개 파일               1,047 바이트
+               4개 디렉터리  33,925,763,072 바이트 남음
+
+c:\Temp>java sec12.exam01_package_compile.Application
+애플리케이션을 실행합니다
+
+-> 완료 후 Navigator 창 접속 -> chap06/bin/sec12/exam01_package_compile 폴더 안에 Application.class 생성
