@@ -1,13 +1,13 @@
 package verify.exam18;
 
 public class ShopService {
-	private static ShopService shopService = new ShopService();
+	private static ShopService singleton = new ShopService();
 	
 	private ShopService() {
 		
 	}
 	
-	static ShopService getInstance() {
-		return shopService;
+	public static ShopService getInstance() {
+		return singleton;
 	} //싱글톤 생성
 }

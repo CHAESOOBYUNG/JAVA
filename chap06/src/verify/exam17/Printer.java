@@ -2,20 +2,20 @@ package verify.exam17;
 
 public class Printer {
 	
-	public static void println(int x) { 
-		System.out.println(x);
+	static void println(int value) { 
+		System.out.println(value);
 	}
 	
-	public static void println(boolean x) {
-		System.out.println(x);
+	static void println(boolean value) {
+		System.out.println(value);
 	}
 	
-	public static void println(double x) {
-		System.out.println(x);
+	static void println(double value) {
+		System.out.println(value);
 	}
 	
-	public static void println(String x) {
-		System.out.println(x);
+	static void println(String value) {
+		System.out.println(value);
 	}
 	
 }

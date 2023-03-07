@@ -12,7 +12,7 @@ public class BankApplication {
 			System.out.println("-----------------------------------------------------");
 			System.out.println("1.계좌생성 | 2.계좌목록 | 3.예금 | 4.출금 | 5. 종료");
 			System.out.println("-----------------------------------------------------");
-			System.out.println("선택> ");
+			System.out.print("선택> ");
 			
 			int selectNo = scanner.nextInt();
 			
@@ -37,29 +37,27 @@ public class BankApplication {
 		System.out.println("계좌생성");
 		System.out.println("--------------------");
 		
-		// scanner 입력창을 전부 nextLine으로 통일 하고
-        // String으로 받은 금액 balance를 다시 Integer.parseInt를
-        // 사용해서 int형으로 변환
 		System.out.print("계좌번호: ");
-		String ano = scanner.nextLine();
+		String ano = scanner.next();
 		
 		System.out.print("계좌주: ");
-		String owner = scanner.nextLine();
+		String owner = scanner.next();
 		
 		System.out.print("초기입금액: ");
-		String strBalance = scanner.nextLine();
-		int balance = Integer.parseInt(strBalance);
+		int balance = scanner.nextInt();
 		
 		// scanner로 입력받은 사용자 정보를 아래의 객체로 생성
-		Account account = new Account(ano,owner,balance);
+		Account newAccount = new Account(ano,owner,balance);
+		
+		// 비어있는 account배열에 새로운 계좌 저장
 		for(int i = 0; i < accountArray.length; i++ ) {
 			if(accountArray[i] == null) {
-				accountArray[i] = account;
+				accountArray[i] = newAccount;
+				System.out.println("결과: 계좌가 생성되었습니다");
 				break;
 			}
 		}
 		
-		System.out.println("결과: 계좌가 생성되었습니다");
 	}
 	
 	//계좌목록보기
@@ -70,15 +68,14 @@ public class BankApplication {
 		
 		for(int i = 0; i < accountArray.length; i++) {
 			Account account = accountArray[i];
-			if(accountArray[i] != null) {
-				System.out.print(account.getAno() + "\t");
-				System.out.print(account.getOwner() + "\t");
-				System.out.print(account.getBalance() + "\t");
+			if(account != null) {
+				System.out.print(account.getAno());
+				System.out.print("    ");
+				System.out.print(account.getOwner());
+				System.out.print("    ");
+				System.out.print(account.getBalance());
 				System.out.println();
-			} else { 
-				break;
-			}
-			
+			} 
 		}
 	}
 	
@@ -89,22 +86,18 @@ public class BankApplication {
 		System.out.println("--------------------");
 		
 		System.out.print("계좌번호: ");
-		String ano = scanner.nextLine();
+		String ano = scanner.next();
 		
 		System.out.print("예금액: ");
-		String strBalance = scanner.nextLine();
-		int balance = Integer.parseInt(strBalance);
+		int money = scanner.nextInt();
 		
 		Account account = findAccount(ano);
-		
-		if(account != null) {
-			account.setBalance(account.getBalance() + balance);
-			
-			System.out.println("결과: 예금이 성공되었습니다");
-		} else {
-			System.out.println("결과: 예금에 실패하였습니다");
+		if(account == null) {
+			System.out.println("계좌가 없습니다");
 			return;
-		}
+		} 
+		account.setBalance(account.getBalance() + money);
+		System.out.println("결과: 입금이 성공되었습니다");
 		
 	}
 	
@@ -115,21 +108,19 @@ public class BankApplication {
 		System.out.println("--------------------");
 		
 		System.out.print("계좌번호: ");
-		String ano = scanner.nextLine();
+		String ano = scanner.next();
 		
 		System.out.print("출금액: ");
-		String strBalance = scanner.nextLine();
-		int balance = Integer.parseInt(strBalance);
+		int money = scanner.nextInt();
 		
 		Account account = findAccount(ano);
 		
-		if(account != null) {
-			account.setBalance(account.getBalance() - balance);
-			
-			System.out.println("결과: 출금이 성공되었습니다");
-		} else {
-			System.out.println("결과: 출금에 실패하였습니다");
-		}
+		if(account == null) {
+			System.out.println("계좌가 없습니다");
+			return;
+		} 
+		account.setBalance(account.getBalance() - money);
+		System.out.println("결과: 출금이 성공되었습니다");
 	}
 	
 	//Account 배열에서 ano와 동일한 Account 객체 찾기
