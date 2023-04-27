@@ -1,19 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="sec08.exam02_return.Practice"/>
-    <fullyQualifiedTypeName name="sec08.exam03_method_call.Practice"/>
-    <fullyQualifiedTypeName name="sec08.exam04_overloading.Practice"/>
-    <fullyQualifiedTypeName name="sec10.exam01_static_member.Calculator"/>
-    <fullyQualifiedTypeName name="sec10.exam02_static___block.Television"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
-    <fullyQualifiedTypeName name="sec11.exam02_static_final.Earth"/>
-    <fullyQualifiedTypeName name="sec09.exam01_instance_member.Practice"/>
-    <fullyQualifiedTypeName name="sec09.exam01_instance_member.Airplane"/>
-    <fullyQualifiedTypeName name="sec10.exam03_static_be_careful.Practice"/>
-    <fullyQualifiedTypeName name="sec10.exam04_singleton.SingletonExample"/>
-    <fullyQualifiedTypeName name="sec10.exam04_singleton.Singleton"/>
-    <fullyQualifiedTypeName name="sec11.exam01_final.Practice"/>
-    <fullyQualifiedTypeName name="java.lang.Math"/>
     <fullyQualifiedTypeName name="sec12.exam03_import.kumho.Tire"/>
     <fullyQualifiedTypeName name="sec12.exam03_import.hankook.Tire"/>
     <fullyQualifiedTypeName name="sec12.exam03_import.hyundai.Engine"/>
@@ -26,7 +12,6 @@
     <fullyQualifiedTypeName name="java.lang.reflect.Method"/>
     <fullyQualifiedTypeName name="sec15.exam01_annotation.PrintAnnotation"/>
     <fullyQualifiedTypeName name="java.lang.reflect.Array"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="sec03.exam01_parent_constructor_call.Student"/>
     <fullyQualifiedTypeName name="sec04.exam02_super.AirPlane"/>
     <fullyQualifiedTypeName name="sec04.exam02_super.SupersonicAirplane"/>
@@ -60,4 +45,19 @@
     <fullyQualifiedTypeName name="java.lang.Class"/>
     <fullyQualifiedTypeName name="sec02.exam01_nestedclass_object.A.B"/>
     <fullyQualifiedTypeName name="sec02.exam01_nestedclass_object.A.C"/>
+    <fullyQualifiedTypeName name="sec03.exam04_outterclass_ref.Outter.Nested"/>
+    <fullyQualifiedTypeName name="sec04.exam01_nested_interface.Button"/>
+    <fullyQualifiedTypeName name="sec04.exam01_nested_interface.Button.OnClickListener"/>
+    <fullyQualifiedTypeName name="sec05.exam01_anonymous_extends.Person"/>
+    <fullyQualifiedTypeName name="sec05.exam01_anonymous_extends.Anonymous"/>
+    <fullyQualifiedTypeName name="verify.exam04.NestedClassExample"/>
+    <fullyQualifiedTypeName name="verify.exam04.Car.Tire"/>
+    <fullyQualifiedTypeName name="verify.exam04.Car.Engine"/>
+    <fullyQualifiedTypeName name="sec05.exam02_anonymous_implements.Anonymous"/>
+    <fullyQualifiedTypeName name="sec05.exam02_anonymous_implements.RemoteControl"/>
+    <fullyQualifiedTypeName name="sec05.exam03_button_event.Button.OnClickListener"/>
+    <fullyQualifiedTypeName name="sec05.exam03_button_event.Window"/>
+    <fullyQualifiedTypeName name="verify.exam05.Vehicle"/>
+    <fullyQualifiedTypeName name="verify.exam05.Anonymous"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
 </qualifiedTypeNameHistroy>

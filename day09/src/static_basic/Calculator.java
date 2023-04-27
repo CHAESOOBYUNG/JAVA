@@ -14,8 +14,8 @@ public class Calculator {
 	/*
 	 * 일반 멤버변수를 사용하는 메서드는 static메서드로 선언하면 안됩니다.
 	 */
-	public static void setColor(String color) {
-		this.color = color;
+	public void setColor(String color) {
+		this.color= color;
 	}
 	
 	public String getColor() {
