@@ -3,7 +3,7 @@ package sec118_data_io;
 import java.util.*;
 
 public class No2_C_Question {
-	/* #include <studio.h>
+	/* #include <stdio.h>
 	 * main() 
 	 * {
 	 * 		int i, j, k;

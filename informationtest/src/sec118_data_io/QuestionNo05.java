@@ -4,7 +4,7 @@ import java.util.*;
 
 public class QuestionNo05 {
 	/*
-	 * #include <studio.h>
+	 * #include <stdio.h>
 	 * main() {
 	 * 		int i, j;
 	 * 		scanf("%o#%x", &i, &j);

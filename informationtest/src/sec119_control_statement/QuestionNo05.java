@@ -3,7 +3,7 @@ package sec119_control_statement;
 public class QuestionNo05 {
 	public static void main(String[] args) {
 		/*
-		 * #include <studio.h>
+		 * #include <stdio.h>
 		 * main() {
 		 * 		int c = 1;
 		 * 		switch (3) {

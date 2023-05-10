@@ -2,7 +2,7 @@ package sec118_data_io;
 
 public class QuestionNo02 {
 	/*
-	 * #include <studio.h>
+	 * #include <stdio.h>
 	 * main() 
 	 * {
 	 * 		int i = 10, j = 10, k = 30;

@@ -3,7 +3,7 @@ package sec118_data_io;
 public class QuestionNo10 {
 	public static void main(String[] args) {
 		/*
-		 * #include <studio.h>
+		 * #include <stdio.h>
 		 * main()
 		 * {
 		 * 		int a = 5, b = 10, c = 15, d = 30, result;

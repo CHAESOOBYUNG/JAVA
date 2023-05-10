@@ -2,7 +2,7 @@ package sec120_pointer;
 
 public class QuestionNo01 {
 	/* C언어 포인터 변수
-	 * #include <studio.h>
+	 * #include <stdio.h>
 	 * main() {
 	 * 		char *p = "KOREA";
 	 * 		printf("%s\n", p);

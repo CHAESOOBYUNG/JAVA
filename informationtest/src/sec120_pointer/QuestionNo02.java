@@ -2,7 +2,7 @@ package sec120_pointer;
 
 public class QuestionNo02 {
 	/*
-	 * #include <studio.h>
+	 * #include <stdio.h>
 	 * int main() {
 	 * 	   int ary[3];
 	 * 	   int s = 0;

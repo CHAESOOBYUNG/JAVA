@@ -5,7 +5,7 @@ import java.util.*;
 public class QuestionNo11 {
 	public static void main(String[] args) {
 		/*
-		 * #include <studio.h>
+		 * #include <stdio.h>
 		 * main() {
 		 * 		int i, a[5], cnt = 0;
 		 * 		

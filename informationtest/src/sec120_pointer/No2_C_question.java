@@ -3,7 +3,7 @@ package sec120_pointer;
 public class No2_C_question {
 
 		/* 포인터 변수는 C언어에서만 사용 가능(JAVA 사용 X)
-		 * #include <studio.h>
+		 * #include <stdio.h>
 		 * main() {
 		 * 		int a = 50;
 		 * 		int *b = &a;

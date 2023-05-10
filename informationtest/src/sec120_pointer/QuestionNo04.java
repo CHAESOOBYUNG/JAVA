@@ -2,7 +2,7 @@ package sec120_pointer;
 
 public class QuestionNo04 {
 	/*
-	 * #include <studio.h>
+	 * #include <stdio.h>
 	 * int main() {
 	 * 	   int a[4] = { 0, 2, 4, 8 };
 	 * 	   int b[3];

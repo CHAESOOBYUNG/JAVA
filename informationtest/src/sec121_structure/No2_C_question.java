@@ -2,7 +2,7 @@ package sec121_structure;
 
 public class No2_C_question {
 	/* 구조체 - C언어 기본타입을 통해 새롭게 정의 가능 -> 사용자 정의 타입
-	 * #include <sutdio.h>
+	 * #include <stdio.h>
 	 * struct jsu {
 	 * 	 char nae[12];
 	 * 	 int os, db, hab, hhab;

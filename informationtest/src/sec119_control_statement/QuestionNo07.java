@@ -3,7 +3,7 @@ package sec119_control_statement;
 public class QuestionNo07 {
 	public static void main(String[] args) {
 		/*
-		 * # include <studio.h>
+		 * # include <stdio.h>
 		 * main() {
 		 * 	   int s, el = 0;
 		 * 	   for(int i = 6; i <= 30; i++) {

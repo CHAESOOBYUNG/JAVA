@@ -2,7 +2,7 @@ package sec118_data_io;
 
 public class QuestionNo06 {
 	/*
-	 * #include <studio.h>
+	 * #include <stdio.h>
 	 * main() 
 	 * {
 	 * 		int j = 024, k = 24, L = 0x24, hap;

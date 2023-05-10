@@ -2,7 +2,7 @@ package sec119_control_statement;
 
 public class No2_C_question {
 	/*
-	 * #include <studio.h>
+	 * #include <stdio.h>
 	 * main() {
 	 * 		   int score[] == { 86, 53, 95, 76, 61 };
 	 * 		   char grade;
