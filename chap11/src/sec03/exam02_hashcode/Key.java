@@ -2,6 +2,7 @@ package sec03.exam02_hashcode;
 
 public class Key {	
 	public int number;
+	
 	public Key(int number) {
 		this.number = number;
 	}
@@ -20,9 +21,9 @@ public class Key {
 	}
 	
 	//hashCode() 메소드 재정의 -> ctrl + space -> hashCode() 클릭
-		@Override
-		public int hashCode() {
-			System.out.println("hashCode()");
+	@Override
+	public int hashCode() {
+		System.out.println("hashCode()");
 			return number;
-		}
+	}
 }
