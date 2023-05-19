@@ -9,7 +9,7 @@ public class CarExample {
 		myCar.run();
 		
 		int speed = myCar.getSpeed();
-		System.out.println("현재속도: " + speed + "km/h)");
+		System.out.println("현재속도: " + speed + "km/h");
 	}
 	
 }
