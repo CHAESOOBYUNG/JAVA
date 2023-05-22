@@ -1,16 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="sec03.exam01_equals.Member"/>
-    <fullyQualifiedTypeName name="sec03.exam03_tostring.SmartPhone"/>
-    <fullyQualifiedTypeName name="question_bank.SuperObject"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
-    <fullyQualifiedTypeName name="question_bank.Connection"/>
-    <fullyQualifiedTypeName name="sec03.exam04_clone.Member"/>
-    <fullyQualifiedTypeName name="java.lang.Cloneable"/>
-    <fullyQualifiedTypeName name="java.util.Objects"/>
-    <fullyQualifiedTypeName name="java.lang.SecurityManager"/>
-    <fullyQualifiedTypeName name="java.lang.SecurityException"/>
-    <fullyQualifiedTypeName name="sec05.exam02_gc.Employee"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.util.Properties"/>
     <fullyQualifiedTypeName name="java.lang.reflect.Constructor"/>
@@ -26,7 +15,6 @@
     <fullyQualifiedTypeName name="java.text.MessageFormat"/>
     <fullyQualifiedTypeName name="java.time.LocalTime"/>
     <fullyQualifiedTypeName name="java.util.TimeZone"/>
-    <fullyQualifiedTypeName name="java.lang.InterruptedException"/>
     <fullyQualifiedTypeName name="java.time.ZonedDateTime"/>
     <fullyQualifiedTypeName name="java.time.ZoneOffset"/>
     <fullyQualifiedTypeName name="java.time.temporal.TemporalAdjuster"/>
@@ -46,18 +34,30 @@
     <fullyQualifiedTypeName name="java.util.StringTokenizer"/>
     <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
     <fullyQualifiedTypeName name="java.util.regex.Pattern"/>
-    <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="sec12.exam01_wrapper.ValueCompareExample"/>
     <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="java.time.LocalDateTime"/>
     <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
     <fullyQualifiedTypeName name="javax.swing.plaf.basic.BasicToolTipUI"/>
     <fullyQualifiedTypeName name="sec02.exam01_create_thread.BeepTask"/>
-    <fullyQualifiedTypeName name="java.lang.Runnable"/>
-    <fullyQualifiedTypeName name="java.lang.Thread"/>
     <fullyQualifiedTypeName name="sec04.exam01_unsynchronized.Calculator"/>
     <fullyQualifiedTypeName name="java.lang.Thread.State"/>
     <fullyQualifiedTypeName name="sec05.exam01_state.StatePrintThread"/>
     <fullyQualifiedTypeName name="sec05.exam01_state.TargetThread"/>
     <fullyQualifiedTypeName name="javax.xml.stream.events.StartDocument"/>
+    <fullyQualifiedTypeName name="sec06.exam03_join.SumThread"/>
+    <fullyQualifiedTypeName name="sec06.exam04_wait_notify.WorkObject"/>
+    <fullyQualifiedTypeName name="sec06.exam04_wait_notify.ThreadA"/>
+    <fullyQualifiedTypeName name="sec06.exam05_wait_notify.ProducerThread"/>
+    <fullyQualifiedTypeName name="sec06.exam05_wait_notify.ConsumerThread"/>
+    <fullyQualifiedTypeName name="sec06.exam06_stop.PrintThread1"/>
+    <fullyQualifiedTypeName name="sec06.exam06_stop.PrintThread2"/>
+    <fullyQualifiedTypeName name="java.lang.InterruptedException"/>
+    <fullyQualifiedTypeName name="sec07.exam01_demon.AutoSavedThread"/>
+    <fullyQualifiedTypeName name="java.lang.Thread"/>
+    <fullyQualifiedTypeName name="java.util.concurrent.ThreadPoolExecutor"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="java.util.concurrent.ExecutorService"/>
+    <fullyQualifiedTypeName name="java.lang.Runtime"/>
+    <fullyQualifiedTypeName name="java.lang.Runnable"/>
 </qualifiedTypeNameHistroy>
