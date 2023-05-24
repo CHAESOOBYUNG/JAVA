@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.time.LocalTime"/>
-    <fullyQualifiedTypeName name="java.util.TimeZone"/>
-    <fullyQualifiedTypeName name="java.time.ZonedDateTime"/>
-    <fullyQualifiedTypeName name="java.time.ZoneOffset"/>
-    <fullyQualifiedTypeName name="java.time.temporal.TemporalAdjuster"/>
     <fullyQualifiedTypeName name="java.time.temporal.TemporalAdjusters"/>
     <fullyQualifiedTypeName name="java.time.DayOfWeek"/>
     <fullyQualifiedTypeName name="java.time.Year"/>
@@ -60,4 +55,9 @@
     <fullyQualifiedTypeName name="sec09.verify.exam10.MovieThread"/>
     <fullyQualifiedTypeName name="sec04.exam01_unsynchronized.MainThreadExample"/>
     <fullyQualifiedTypeName name="java.lang.Thread"/>
+    <fullyQualifiedTypeName name="sec02.exam01_none_generic_type.Apple"/>
+    <fullyQualifiedTypeName name="sec03.exam01_multi_type_parameter.Product"/>
+    <fullyQualifiedTypeName name="sec04.exam01_generic_method.Box"/>
+    <fullyQualifiedTypeName name="sec04.exam02_generic_method.Pair"/>
+    <fullyQualifiedTypeName name="sec05.exam01_bounded_type.Util"/>
 </qualifiedTypeNameHistroy>
