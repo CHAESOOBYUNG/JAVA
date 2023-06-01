@@ -9,8 +9,8 @@ public class LamdaExample {
 	};
 	
 	//avg() 메소드 작성
-	public static double avg(ToIntFunction<Student> function) {
-		int count = 0; int sum = 0;
+	public static double avg(ToIntFunction<Student> function) { //Student 객체를 int 타입으로 변경
+		int sum = 0;
 		for(Student student: students) {
 			sum += function.applyAsInt(student);
 		}
