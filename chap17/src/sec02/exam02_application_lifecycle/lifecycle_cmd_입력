@@ -1,0 +1,12 @@
+exam02_application_lifecycle cmd 입력
+
+C:\Users\Chae Soobyung>cd C:\Users\Chae Soobyung\Desktop\course\Java\workspace\chap17
+
+C:\Users\Chae Soobyung\Desktop\course\Java\workspace\chap17>cd bin
+
+C:\Users\Chae Soobyung\Desktop\course\Java\workspace\chap17\bin>java sec02.exam02_application_lifecycle.AppMain --ip=192.168.10.5 --port=50001
+C:\Users\Chae Soobyung\Desktop\course\Java\workspace\chap17\bin>java sec02.exam02_application_lifecycle.AppMain --ip=192.168.10.5 --port=50001
+Error: LinkageError occurred while loading main class sec02.exam02_application_lifecycle.AppMain
+        java.lang.UnsupportedClassVersionError: sec02/exam02_application_lifecycle/AppMain has been compiled by a more recent version of the Java Runtime (class file version 60.0), this version of the Java Runtime only recognizes class file versions up to 55.0
+-> 에러 발생 이유:  클래스 파일이 Java 16(클래스 파일 버전 60.0) / Java Runtime Environment(JRE)는 Java 11(클래스 파일 버전 55.0)까지 서비스 제공
+-> JAVA 최신 업데이트 필요         

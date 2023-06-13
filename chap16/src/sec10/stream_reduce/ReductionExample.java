@@ -21,7 +21,7 @@ public class ReductionExample {
 			.reduce((a, b) -> a+b)
 			.getAsInt();
 		
-		
+		//reduce(int identity, IntBinaryOperator op) 이용
 		int sum3 = studentList.stream()
 			.mapToInt(Student :: getScore)
 			.reduce(0, (a, b) -> a+b);

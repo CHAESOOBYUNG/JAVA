@@ -1,0 +1,8 @@
+SystemExample1.java 명령 프롬포트에서 실행하기
+
+C:\Users\Chae Soobyung>cd C:\Users\Chae Soobyung\Desktop\course\Java\workspace\chap18
+C:\Users\Chae Soobyung\Desktop\course\Java\workspace\chap18>dir
+C:\Users\Chae Soobyung\Desktop\course\Java\workspace\chap18>cd bin
+C:\Users\Chae Soobyung\Desktop\course\Java\workspace\chap18\bin>dir
+C:\Users\Chae Soobyung\Desktop\course\Java\workspace\chap18\bin>java
+C:\Users\Chae Soobyung\Desktop\course\Java\workspace\chap18\bin>java sec03.exam01_system_in_out.SystemInExample1
