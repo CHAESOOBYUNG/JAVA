@@ -18,5 +18,5 @@ public class AppMain extends Application { //작동 안됨 - e(fx)clipse 다운 
 	
 	public static void main(String[] args) {
 		launch(args);
-	}
+	}/
 }

@@ -170,4 +170,7 @@
 	<section name="ClasspathContainerSelectionPage">
 		<item key="index" value="8"/>
 	</section>
+	<section name="WorkingSetModelAwareSelectionDialog">
+		<item key="ShowVisibleOnly" value="true"/>
+	</section>
 </section>

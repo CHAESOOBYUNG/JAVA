@@ -1,0 +1,9 @@
+serialver.exe 명령 프롬포트 실행 방법
+C:\Users\Chae Soobyung>cd C:\Users\Chae Soobyung\Desktop\course\Java\workspace\chap18
+
+C:\Users\Chae Soobyung\Desktop\course\Java\workspace\chap18>cd bin
+
+C:\Users\Chae Soobyung\Desktop\course\Java\workspace\chap18\bin>dir
+
+C:\Users\Chae Soobyung\Desktop\course\Java\workspace\chap18\bin>serialver sec05.exam08_objectinputstream_objectoutputstream.ClassC
+sec05.exam08_objectinputstream_objectoutputstream.ClassC:    private static final long serialVersionUID = -1265691405514514962L;
