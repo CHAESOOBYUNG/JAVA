@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+
+<TilePane xmlns:fx="http://javafx.com/fxml" prefTileWidth="200" prefTileHeight="200">
+	<children>
+		<ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+			<image>
+				<Image url="@images/ive1.jpg"/>
+			</image>
+		</ImageView>
+		<ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+			<image>
+				<Image url="@images/ive2.jpg"/>
+			</image>
+		</ImageView>
+		<ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+			<image>
+				<Image url="@images/ive3.jpg"/>
+			</image>
+		</ImageView>
+		<ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+			<image>
+				<Image url="@images/ive4.jpg"/>
+			</image>
+		</ImageView>
+		<ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+			<image>
+				<Image url="@images/ive5.jpg"/>
+			</image>
+		</ImageView>
+		<ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+			<image>
+				<Image url="@images/ive6.jpg"/>
+			</image>
+		</ImageView>
+	</children>
+</TilePane>

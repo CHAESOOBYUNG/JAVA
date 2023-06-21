@@ -5,7 +5,7 @@ import javafx.fxml.*;
 import javafx.scene.*;
 import javafx.stage.*;
 
-public class AppMain extends Application { //작동 안됨 - e(fx)clipse 다운 X -> fxml문서 생성 X
+public class AppMain extends Application { //문서 생성 X
 	@Override
 	public void start(Stage primaryStage) throws Exception {
 		Parent parent = FXMLLoader.load(getClass().getResource("root.fxml"));
