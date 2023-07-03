@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+	prefWidth="420" prefHeight="150"
+	fx:controller="sec07.exam01_button.RootController">
+	
+	<padding>
+		<!-- <Insets top="10" right="10" bottom="10" left="10"/> -->
+		<Insets topRightBottomLeft="10" />
+	</padding>
+	
+	<center>
+		<HBox alignment="CENTER" prefWidth="200" prefHeight="100" spacing="10">
+			<children>
+				<VBox prefWidth="100" prefHeight="200" spacing="20" alignment="CENTER_LEFT">
+					<children>
+						<CheckBox fx:id="chk1" text="하트" onAction="#handleCheckAction"/>
+						<CheckBox fx:id="chk2" text="별" onAction="#handleCheckAction"/>
+					</children>
+				</VBox>
+				<ImageView fx:id="checkImageView" fitWidth="100" preserveRatio="true">
+					<image>
+						<Image url="@images/ive2.jpg"/>
+					</image>
+				</ImageView>
+				
+				<Separator orientation="VERTICAL" prefHeight="200"/>
+				
+				<VBox prefWidth="150.0" prefHeight="200.0" spacing="20.0" alignment="CENTER_LEFT">
+					<fx:define><ToggleGroup fx:id="group"/></fx:define>
+					<children>
+						<RadioButton text="장원영" userData="ive1" toggleGroup="$group"/>
+						<RadioButton text="안유진" userData="ive3" toggleGroup="$group" selected="true"/>
+						<RadioButton text="이현서" userData="ive4" toggleGroup="$group"/>
+					</children>
+				</VBox>
+				<ImageView fx:id="radioImageView" fitWidth="100" preserveRatio="true">
+					<image>
+						<Image url="@images/ive3.jpg"/>
+					</image>
+				</ImageView>
+				
+			</children>
+		</HBox>
+	</center>
+	
+	<bottom>
+		<Button BorderPane.alignment="CENTER" onAction="#handleBtnExitAction">
+			<graphic>
+				<ImageView>
+					<Image url="@images/rocket.gif"/>
+				</ImageView>
+			</graphic>
+			<BorderPane.margin>
+				<Insets top="20"/>
+			</BorderPane.margin>
+		</Button>
+	</bottom>
+	
+</BorderPane>
