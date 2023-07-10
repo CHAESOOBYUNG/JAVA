@@ -168,7 +168,7 @@
 		<item key="HISTORY_SIZE" value="0"/>
 	</section>
 	<section name="ClasspathContainerSelectionPage">
-		<item key="index" value="8"/>
+		<item key="index" value="10"/>
 	</section>
 	<section name="WorkingSetModelAwareSelectionDialog">
 		<item key="ShowVisibleOnly" value="true"/>

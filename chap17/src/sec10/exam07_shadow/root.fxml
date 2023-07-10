@@ -3,8 +3,6 @@
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Button?>
 
 <HBox prefWidth="300" prefHeight="150" xmlns:fx="http://javafx.com/fxml"
 	spacing="50" fillHeight="false" alignment="CENTER">

@@ -2,10 +2,6 @@
 
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.control.PasswordField?>
-<?import javafx.scene.control.Button?>
 
 <AnchorPane styleClass="root" xmlns:fx="http://javafx.com/fxml"
 	prefHeight="194.0" prefWidth="300.0">
