@@ -1,21 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="javafx.stage.FileChooser"/>
-    <fullyQualifiedTypeName name="javafx.stage.DirectoryChooser"/>
-    <fullyQualifiedTypeName name="javafx.stage.Popup"/>
-    <fullyQualifiedTypeName name="javafx.scene.image.ImageView"/>
-    <fullyQualifiedTypeName name="java.lang.Exception"/>
-    <fullyQualifiedTypeName name="java.text.NumberFormat.Style"/>
-    <fullyQualifiedTypeName name="javafx.scene.control.Label"/>
-    <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
-    <fullyQualifiedTypeName name="javafx.application.Platform"/>
-    <fullyQualifiedTypeName name="java.lang.Thread"/>
-    <fullyQualifiedTypeName name="java.lang.InterruptedException"/>
-    <fullyQualifiedTypeName name="javafx.scene.control.ProgressBar"/>
-    <fullyQualifiedTypeName name="javafx.concurrent.Service"/>
-    <fullyQualifiedTypeName name="sec11.exam04_service.RootController.TimeService"/>
-    <fullyQualifiedTypeName name="javafx.concurrent.Task"/>
-    <fullyQualifiedTypeName name="javafx.fxml.FXML"/>
     <fullyQualifiedTypeName name="javafx.scene.layout.StackPane"/>
     <fullyQualifiedTypeName name="javafx.animation.Timeline"/>
     <fullyQualifiedTypeName name="javafx.animation.KeyValue"/>
@@ -45,12 +29,10 @@
     <fullyQualifiedTypeName name="javafx.scene.chart.PieChart"/>
     <fullyQualifiedTypeName name="javax.management.InvalidApplicationException"/>
     <fullyQualifiedTypeName name="java.util.concurrent.ExecutorService"/>
-    <fullyQualifiedTypeName name="java.net.ServerSocket"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.Vector"/>
     <fullyQualifiedTypeName name="java.lang.Double"/>
     <fullyQualifiedTypeName name="java.awt.TextField"/>
-    <fullyQualifiedTypeName name="java.net.Socket"/>
     <fullyQualifiedTypeName name="java.nio.channels.ClosedByInterruptException"/>
     <fullyQualifiedTypeName name="java.awt.TextArea"/>
     <fullyQualifiedTypeName name="javafx.application.Application"/>
@@ -60,4 +42,22 @@
     <fullyQualifiedTypeName name="javafx.geometry.Insets"/>
     <fullyQualifiedTypeName name="javafx.scene.control.Button"/>
     <fullyQualifiedTypeName name="javafx.scene.Scene"/>
+    <fullyQualifiedTypeName name="java.util.concurrent.Executors"/>
+    <fullyQualifiedTypeName name="java.net.ServerSocket"/>
+    <fullyQualifiedTypeName name="sec07.exam03_chatting.ServerExample.Client"/>
+    <fullyQualifiedTypeName name="java.net.Socket"/>
+    <fullyQualifiedTypeName name="java.util.Iterator"/>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="java.lang.Runnable"/>
+    <fullyQualifiedTypeName name="byte"/>
+    <fullyQualifiedTypeName name="java.io.InputStream"/>
+    <fullyQualifiedTypeName name="javax.imageio.IIOException"/>
+    <fullyQualifiedTypeName name="javafx.application.Platform"/>
+    <fullyQualifiedTypeName name="java.io.OutputStream"/>
+    <fullyQualifiedTypeName name="java.net.InetSocketAddress"/>
+    <fullyQualifiedTypeName name="java.net.DatagramSocket"/>
+    <fullyQualifiedTypeName name="java.lang.Thread"/>
+    <fullyQualifiedTypeName name="java.net.DatagramPacket"/>
+    <fullyQualifiedTypeName name="java.lang.Exception"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
 </qualifiedTypeNameHistroy>

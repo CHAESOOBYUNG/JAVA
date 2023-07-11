@@ -1,6 +1,9 @@
 package sec07.exam03_chatting;
 
+import java.io.*;
 import java.net.*;
+
+import javax.imageio.*;
 
 import javafx.application.*;
 import javafx.geometry.*;
@@ -14,18 +17,91 @@ public class ClientExample extends Application{
 	
 	void startClient() {
 		//연결 시작 코드
+		Thread thread = new Thread() { //스레드 생성
+			@Override
+			public void run() {
+				try {
+					//소켓 생성 및 연결 요청
+					socket = new Socket();
+					socket.connect(new InetSocketAddress("localhost", 5001));
+					Platform.runLater(() -> {
+						displayText("[연결 완료: " + socket.getRemoteSocketAddress() + "]");
+						btnConn.setText("stop");
+						btnSend.setDisable(false);
+					});
+				} catch (IOException e) {
+					Platform.runLater(() -> displayText("[서버 통신 안됨]"));
+					if(!socket.isClosed()) { stopClient(); }
+					return;
+				}
+				receive(); //서버에서 보낸 데이터 받기
+			}
+		};
+		thread.start(); //스레드 시작
 	}
 	
 	void stopClient() {
 		//연결 끊기 코드
+		try {
+			Platform.runLater(() -> {
+				displayText("[연결 끊음]");
+				btnConn.setText("start");
+				btnSend.setDisable(true);
+			});
+			//연결 끊기
+			if(socket != null && !socket.isClosed()) {
+				socket.close();
+			}
+		} catch (Exception e) {}
 	}
 	
 	void receive() {
 		//데이터 받기 코드
+		while(true) {
+			try {
+				byte[] byteArr = new byte[100];
+				InputStream inputStream = socket.getInputStream();
+				
+				//서버가 비정상적으로 종료했을 경우 IOException 발생
+				int readByteCount = inputStream.read(byteArr); //데이터 받기
+				
+				//서버가 정상적으로 Socket의 close()를 호출했을 경우
+				if(readByteCount == -1) {
+					throw new IOException();
+				}
+				
+				String data = new String(byteArr, 0, readByteCount, "UTF-8"); //문자열로 변환
+				
+				Platform.runLater(() -> displayText("[받기 완료]" + data));
+			} catch(Exception e) {
+				Platform.runLater(() -> displayText("[서버 통신 안됨]"));
+				stopClient();
+				break;
+			}
+		}
 	}
 	
 	void send(String data) {
 		//데이터 전송 코드
+		Thread thread = new Thread() { //스레드 생성
+			@Override
+			public void run() {
+				try {
+					byte[] byteArr = data.getBytes("UTF-8");
+					
+					//서버로 데이터 보내기
+					OutputStream outputStream = socket.getOutputStream();
+					outputStream.write(byteArr);
+					outputStream.flush();
+					
+					Platform.runLater(() -> displayText("[보내기 완료]"));
+				} catch (Exception e) {
+					Platform.runLater(() -> displayText("[서버 통신 안됨]"));
+					stopClient();
+				}
+			}	
+		};
+		thread.start(); //스레드 생성
 	}
 	
 	///////////////////////////////////////

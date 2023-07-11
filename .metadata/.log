@@ -200,3 +200,2144 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+!SESSION 2023-07-11 09:02:15.944 -----------------------------------------------
+eclipse.buildId=4.28.0.20230608-1200
+java.version=20.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.emf.ecore 2 0 2023-07-11 09:03:10.628
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY org.eclipse.jface 2 0 2023-07-11 09:03:32.348
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-07-11 09:03:32.348
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:03:46.124
+!MESSAGE The current target platform contains errors, open Window > Preferences > Plug-in Development > Target Platform for details.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Problems occurred getting the plug-ins in this container
+	at org.eclipse.pde.internal.core.PluginModelManager.getExternalBundles(PluginModelManager.java:697)
+	at org.eclipse.pde.internal.core.PluginModelManager.initializeTable(PluginModelManager.java:606)
+	at org.eclipse.pde.internal.core.PluginModelManager.findModel(PluginModelManager.java:1071)
+	at org.eclipse.pde.internal.core.RequiredPluginsInitializer.initialize(RequiredPluginsInitializer.java:50)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeContainer(JavaModelManager.java:3146)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getClasspathContainer(JavaModelManager.java:2094)
+	at org.eclipse.jdt.core.JavaCore.getClasspathContainer(JavaCore.java:3821)
+	at org.eclipse.jdt.internal.core.JavaProject.resolveClasspath(JavaProject.java:3271)
+	at org.eclipse.jdt.internal.core.JavaProject.resolveClasspath(JavaProject.java:3435)
+	at org.eclipse.jdt.internal.core.JavaProject.getResolvedClasspath(JavaProject.java:2520)
+	at org.eclipse.jdt.internal.core.JavaProject.getClasspathEntryFor(JavaProject.java:1875)
+	at org.eclipse.jdt.internal.core.PackageFragmentRoot.findSourceAttachmentRecommendation(PackageFragmentRoot.java:383)
+	at org.eclipse.jdt.internal.core.PackageFragmentRoot.getSourceAttachmentPath(PackageFragmentRoot.java:678)
+	at org.eclipse.xtext.ui.resource.SourceAttachmentPackageFragmentRootWalker.traverse(SourceAttachmentPackageFragmentRootWalker.java:86)
+	at org.eclipse.xtext.ui.resource.Storage2UriMapperJavaImpl.initializeData(Storage2UriMapperJavaImpl.java:346)
+	at org.eclipse.xtext.ui.resource.Storage2UriMapperJavaImpl.getCachedData(Storage2UriMapperJavaImpl.java:267)
+	at org.eclipse.xtext.ui.resource.Storage2UriMapperJavaImpl.updateCache(Storage2UriMapperJavaImpl.java:499)
+	at org.eclipse.xtext.ui.resource.Storage2UriMapperJavaImpl$4.run(Storage2UriMapperJavaImpl.java:699)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2382)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2407)
+	at org.eclipse.xtext.ui.resource.Storage2UriMapperJavaImpl.doInitializeCache(Storage2UriMapperJavaImpl.java:711)
+	at org.eclipse.xtext.ui.resource.Storage2UriMapperJavaImpl$3.run(Storage2UriMapperJavaImpl.java:678)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.common.source_2.28.0.v20230315-1321.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.ecore.source_2.34.0.v20230406-1203.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.language.ide.source_2.14.0.v20221117-1134.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.language.source_2.14.0.v20221117-1134.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.language.ui.source_2.14.0.v20221117-1134.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.launch.source_2.14.0.v20221117-1134.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.launch.ui.source_2.14.0.v20221117-1134.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.lib.source_2.14.0.v20221117-1134.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.runtime.source_2.14.0.v20221117-1134.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.core.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.ide.common.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.ide.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.lib.macro.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.lib.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.m2e.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.standalone.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.activities.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.builder.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.builder.standalone.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.buildship.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.common.types.edit.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.common.types.shared.jdt38.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.common.types.shared.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.common.types.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.common.types.ui.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ecore.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ide.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.java.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.junit4.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.logging.source_1.2.24.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.m2e.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.purexbase.ide.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.purexbase.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.purexbase.ui.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.smap.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.testing.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.codemining.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.codetemplates.ide.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.codetemplates.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.codetemplates.ui.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.ecore.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.shared.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.testing.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.util.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.ide.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.junit.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.lib.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.testing.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.ui.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.ui.testing.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xtext.generator.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xtext.ide.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xtext.ui.graph.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xtext.ui.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xtext.wizard.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 1 org.eclipse.pde.core 4 0 2023-07-11 09:03:46.126
+!MESSAGE Problems occurred getting the plug-ins in this container
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:03:46.126
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.common.source_2.28.0.v20230315-1321.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:03:46.126
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.ecore.source_2.34.0.v20230406-1203.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:03:46.126
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.language.ide.source_2.14.0.v20221117-1134.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:03:46.126
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.language.source_2.14.0.v20221117-1134.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:03:46.126
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.language.ui.source_2.14.0.v20221117-1134.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:03:46.127
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.launch.source_2.14.0.v20221117-1134.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:03:46.127
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.launch.ui.source_2.14.0.v20221117-1134.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:03:46.127
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.lib.source_2.14.0.v20221117-1134.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:03:46.127
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.runtime.source_2.14.0.v20221117-1134.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:03:46.127
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.core.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:03:46.127
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.ide.common.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:03:46.127
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.ide.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:03:46.127
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.lib.macro.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:03:46.127
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.lib.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:03:46.127
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.m2e.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:03:46.127
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.standalone.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:03:46.127
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.activities.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:03:46.127
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.builder.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:03:46.127
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.builder.standalone.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:03:46.127
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.buildship.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:03:46.127
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.common.types.edit.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:03:46.127
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.common.types.shared.jdt38.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:03:46.127
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.common.types.shared.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:03:46.127
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.common.types.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:03:46.128
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.common.types.ui.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:03:46.128
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ecore.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:03:46.128
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ide.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:03:46.128
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.java.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:03:46.128
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.junit4.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:03:46.128
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.logging.source_1.2.24.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:03:46.128
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.m2e.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:03:46.128
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.purexbase.ide.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:03:46.128
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.purexbase.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:03:46.128
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.purexbase.ui.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:03:46.128
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.smap.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:03:46.129
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:03:46.129
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.testing.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:03:46.129
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.codemining.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:03:46.129
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.codetemplates.ide.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:03:46.129
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.codetemplates.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:03:46.129
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.codetemplates.ui.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:03:46.129
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.ecore.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:03:46.129
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.shared.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:03:46.129
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:03:46.129
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.testing.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:03:46.129
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.util.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:03:46.129
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.ide.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:03:46.129
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.junit.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:03:46.129
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.lib.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:03:46.129
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:03:46.129
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.testing.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:03:46.129
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.ui.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:03:46.129
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.ui.testing.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:03:46.129
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xtext.generator.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:03:46.129
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xtext.ide.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:03:46.129
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xtext.ui.graph.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:03:46.129
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xtext.ui.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:03:46.129
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xtext.wizard.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:03:46.132
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.common.source_2.28.0.v20230315-1321.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:03:46.133
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.ecore.source_2.34.0.v20230406-1203.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:03:46.134
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.language.ide.source_2.14.0.v20221117-1134.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:03:46.136
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.language.source_2.14.0.v20221117-1134.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:03:46.137
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.language.ui.source_2.14.0.v20221117-1134.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:03:46.138
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.launch.source_2.14.0.v20221117-1134.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:03:46.139
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.launch.ui.source_2.14.0.v20221117-1134.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:03:46.140
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.lib.source_2.14.0.v20221117-1134.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:03:46.142
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.runtime.source_2.14.0.v20221117-1134.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:03:46.143
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.core.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:03:46.144
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.ide.common.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:03:46.145
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.ide.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:03:46.146
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.lib.macro.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:03:46.148
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.lib.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:03:46.150
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.m2e.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:03:46.151
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.standalone.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:03:46.152
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.activities.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:03:46.153
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.builder.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:03:46.155
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.builder.standalone.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:03:46.156
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.buildship.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:03:46.157
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.common.types.edit.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:03:46.158
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.common.types.shared.jdt38.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:03:46.159
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.common.types.shared.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:03:46.160
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.common.types.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:03:46.162
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.common.types.ui.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:03:46.163
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ecore.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:03:46.164
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ide.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:03:46.166
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.java.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:03:46.168
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.junit4.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:03:46.169
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.logging.source_1.2.24.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:03:46.170
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.m2e.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:03:46.172
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.purexbase.ide.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:03:46.173
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.purexbase.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:03:46.174
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.purexbase.ui.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:03:46.175
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.smap.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:03:46.177
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:03:46.178
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.testing.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:03:46.179
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.codemining.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:03:46.181
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.codetemplates.ide.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:03:46.182
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.codetemplates.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:03:46.184
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.codetemplates.ui.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:03:46.187
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.ecore.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:03:46.188
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.shared.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:03:46.190
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:03:46.191
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.testing.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:03:46.192
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.util.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:03:46.193
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.ide.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:03:46.195
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.junit.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:03:46.196
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.lib.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:03:46.197
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:03:46.199
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.testing.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:03:46.200
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.ui.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:03:46.201
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.ui.testing.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:03:46.202
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xtext.generator.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:03:46.204
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xtext.ide.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:03:46.205
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xtext.ui.graph.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:03:46.206
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xtext.ui.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:03:46.207
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xtext.wizard.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.egit.ui 2 0 2023-07-11 09:03:54.128
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Chae Soobyung'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2023-07-11 09:33:34.414 -----------------------------------------------
+eclipse.buildId=4.28.0.20230608-1200
+java.version=20.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.emf.ecore 2 0 2023-07-11 09:33:38.296
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY org.eclipse.jface 2 0 2023-07-11 09:33:45.713
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-07-11 09:33:45.713
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2023-07-11 09:33:52.636
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Chae Soobyung'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:33:55.260
+!MESSAGE The current target platform contains errors, open Window > Preferences > Plug-in Development > Target Platform for details.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Problems occurred getting the plug-ins in this container
+	at org.eclipse.pde.internal.core.PluginModelManager.getExternalBundles(PluginModelManager.java:697)
+	at org.eclipse.pde.internal.core.PluginModelManager.initializeTable(PluginModelManager.java:606)
+	at org.eclipse.pde.internal.core.PluginModelManager.findModel(PluginModelManager.java:1071)
+	at org.eclipse.pde.internal.core.RequiredPluginsInitializer.initialize(RequiredPluginsInitializer.java:50)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeContainer(JavaModelManager.java:3146)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getClasspathContainer(JavaModelManager.java:2094)
+	at org.eclipse.jdt.core.JavaCore.getClasspathContainer(JavaCore.java:3821)
+	at org.eclipse.jdt.internal.core.JavaProject.resolveClasspath(JavaProject.java:3271)
+	at org.eclipse.jdt.internal.core.JavaProject.resolveClasspath(JavaProject.java:3435)
+	at org.eclipse.jdt.internal.core.JavaProject.getResolvedClasspath(JavaProject.java:2520)
+	at org.eclipse.jdt.internal.core.JavaProject.buildStructure(JavaProject.java:535)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:266)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:597)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:328)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:314)
+	at org.eclipse.jdt.internal.core.JavaProject.getProjectCache(JavaProject.java:2479)
+	at org.eclipse.jdt.internal.core.JavaProjectElementInfo.newNameLookup(JavaProjectElementInfo.java:333)
+	at org.eclipse.jdt.internal.core.JavaProject.newNameLookup(JavaProject.java:2898)
+	at org.eclipse.jdt.internal.core.SearchableEnvironment.<init>(SearchableEnvironment.java:106)
+	at org.eclipse.jdt.internal.core.SearchableEnvironment.<init>(SearchableEnvironment.java:146)
+	at org.eclipse.jdt.internal.core.CancelableNameEnvironment.<init>(CancelableNameEnvironment.java:32)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:255)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:348)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:193)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:94)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:740)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:806)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1325)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:132)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:94)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:91)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.initialReconcile(JavaReconcilingStrategy.java:189)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.initialReconcile(CompositeReconcilingStrategy.java:125)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.initialReconcile(JavaCompositeReconcilingStrategy.java:139)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.initialProcess(MonoReconciler.java:100)
+	at org.eclipse.jdt.internal.ui.text.JavaReconciler.initialProcess(JavaReconciler.java:421)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:177)
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.common.source_2.28.0.v20230315-1321.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.ecore.source_2.34.0.v20230406-1203.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.language.ide.source_2.14.0.v20221117-1134.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.language.source_2.14.0.v20221117-1134.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.language.ui.source_2.14.0.v20221117-1134.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.launch.source_2.14.0.v20221117-1134.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.launch.ui.source_2.14.0.v20221117-1134.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.lib.source_2.14.0.v20221117-1134.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.runtime.source_2.14.0.v20221117-1134.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.core.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.ide.common.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.ide.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.lib.macro.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.lib.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.m2e.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.standalone.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.activities.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.builder.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.builder.standalone.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.buildship.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.common.types.edit.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.common.types.shared.jdt38.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.common.types.shared.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.common.types.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.common.types.ui.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ecore.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ide.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.java.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.junit4.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.logging.source_1.2.24.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.m2e.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.purexbase.ide.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.purexbase.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.purexbase.ui.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.smap.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.testing.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.codemining.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.codetemplates.ide.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.codetemplates.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.codetemplates.ui.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.ecore.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.shared.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.testing.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.util.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.ide.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.junit.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.lib.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.testing.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.ui.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.ui.testing.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xtext.generator.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xtext.ide.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xtext.ui.graph.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xtext.ui.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xtext.wizard.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 1 org.eclipse.pde.core 4 0 2023-07-11 09:33:55.262
+!MESSAGE Problems occurred getting the plug-ins in this container
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:33:55.262
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.common.source_2.28.0.v20230315-1321.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:33:55.262
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.ecore.source_2.34.0.v20230406-1203.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:33:55.262
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.language.ide.source_2.14.0.v20221117-1134.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:33:55.262
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.language.source_2.14.0.v20221117-1134.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:33:55.262
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.language.ui.source_2.14.0.v20221117-1134.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:33:55.262
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.launch.source_2.14.0.v20221117-1134.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:33:55.262
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.launch.ui.source_2.14.0.v20221117-1134.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:33:55.262
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.lib.source_2.14.0.v20221117-1134.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:33:55.262
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.runtime.source_2.14.0.v20221117-1134.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:33:55.262
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.core.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:33:55.262
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.ide.common.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:33:55.262
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.ide.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:33:55.262
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.lib.macro.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:33:55.262
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.lib.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:33:55.262
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.m2e.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:33:55.262
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.standalone.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:33:55.262
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.activities.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:33:55.263
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.builder.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:33:55.263
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.builder.standalone.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:33:55.263
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.buildship.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:33:55.263
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.common.types.edit.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:33:55.263
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.common.types.shared.jdt38.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:33:55.263
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.common.types.shared.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:33:55.263
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.common.types.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:33:55.263
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.common.types.ui.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:33:55.263
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ecore.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:33:55.263
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ide.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:33:55.263
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.java.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:33:55.263
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.junit4.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:33:55.263
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.logging.source_1.2.24.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:33:55.263
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.m2e.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:33:55.264
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.purexbase.ide.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:33:55.264
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.purexbase.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:33:55.264
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.purexbase.ui.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:33:55.264
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.smap.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:33:55.264
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:33:55.264
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.testing.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:33:55.264
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.codemining.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:33:55.264
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.codetemplates.ide.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:33:55.264
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.codetemplates.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:33:55.264
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.codetemplates.ui.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:33:55.264
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.ecore.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:33:55.265
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.shared.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:33:55.265
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:33:55.265
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.testing.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:33:55.265
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.util.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:33:55.265
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.ide.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:33:55.265
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.junit.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:33:55.266
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.lib.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:33:55.266
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:33:55.266
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.testing.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:33:55.266
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.ui.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:33:55.266
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.ui.testing.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:33:55.266
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xtext.generator.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:33:55.266
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xtext.ide.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:33:55.266
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xtext.ui.graph.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:33:55.266
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xtext.ui.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:33:55.267
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xtext.wizard.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:33:55.282
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.common.source_2.28.0.v20230315-1321.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:33:55.286
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.ecore.source_2.34.0.v20230406-1203.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:33:55.297
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.language.ide.source_2.14.0.v20221117-1134.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:33:55.300
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.language.source_2.14.0.v20221117-1134.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:33:55.302
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.language.ui.source_2.14.0.v20221117-1134.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:33:55.305
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.launch.source_2.14.0.v20221117-1134.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:33:55.310
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.launch.ui.source_2.14.0.v20221117-1134.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:33:55.315
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.lib.source_2.14.0.v20221117-1134.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:33:55.325
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.runtime.source_2.14.0.v20221117-1134.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:33:55.326
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.core.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:33:55.328
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.ide.common.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:33:55.329
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.ide.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:33:55.330
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.lib.macro.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:33:55.331
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.lib.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:33:55.333
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.m2e.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:33:55.334
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.standalone.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:33:55.336
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.activities.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:33:55.337
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.builder.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:33:55.338
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.builder.standalone.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:33:55.341
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.buildship.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:33:55.343
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.common.types.edit.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:33:55.344
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.common.types.shared.jdt38.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:33:55.345
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.common.types.shared.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:33:55.347
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.common.types.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:33:55.348
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.common.types.ui.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:33:55.350
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ecore.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:33:55.351
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ide.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:33:55.353
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.java.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:33:55.354
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.junit4.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:33:55.358
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.logging.source_1.2.24.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:33:55.360
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.m2e.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:33:55.361
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.purexbase.ide.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:33:55.363
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.purexbase.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:33:55.365
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.purexbase.ui.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:33:55.367
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.smap.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:33:55.368
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:33:55.371
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.testing.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:33:55.404
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.codemining.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:33:55.411
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.codetemplates.ide.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:33:55.413
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.codetemplates.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:33:55.416
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.codetemplates.ui.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:33:55.420
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.ecore.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:33:55.424
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.shared.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:33:55.426
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:33:55.427
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.testing.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:33:55.428
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.util.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:33:55.429
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.ide.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:33:55.430
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.junit.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:33:55.431
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.lib.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:33:55.432
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:33:55.434
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.testing.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:33:55.436
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.ui.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:33:55.437
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.ui.testing.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:33:55.438
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xtext.generator.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:33:55.442
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xtext.ide.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:33:55.444
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xtext.ui.graph.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:33:55.446
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xtext.ui.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:33:55.447
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xtext.wizard.source_2.31.0.v20230529-0659.jar
+!SESSION 2023-07-11 09:53:16.033 -----------------------------------------------
+eclipse.buildId=4.28.0.20230608-1200
+java.version=20.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.emf.ecore 2 0 2023-07-11 09:53:20.137
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY org.eclipse.jface 2 0 2023-07-11 09:53:27.119
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-07-11 09:53:27.119
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2023-07-11 09:53:33.701
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Chae Soobyung'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:53:34.991
+!MESSAGE The current target platform contains errors, open Window > Preferences > Plug-in Development > Target Platform for details.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Problems occurred getting the plug-ins in this container
+	at org.eclipse.pde.internal.core.PluginModelManager.getExternalBundles(PluginModelManager.java:697)
+	at org.eclipse.pde.internal.core.PluginModelManager.initializeTable(PluginModelManager.java:606)
+	at org.eclipse.pde.internal.core.PluginModelManager.findModel(PluginModelManager.java:1071)
+	at org.eclipse.pde.internal.core.RequiredPluginsInitializer.initialize(RequiredPluginsInitializer.java:50)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeContainer(JavaModelManager.java:3146)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getClasspathContainer(JavaModelManager.java:2094)
+	at org.eclipse.jdt.core.JavaCore.getClasspathContainer(JavaCore.java:3821)
+	at org.eclipse.jdt.internal.core.JavaProject.resolveClasspath(JavaProject.java:3271)
+	at org.eclipse.jdt.internal.core.JavaProject.resolveClasspath(JavaProject.java:3435)
+	at org.eclipse.jdt.internal.core.JavaProject.getResolvedClasspath(JavaProject.java:2520)
+	at org.eclipse.jdt.internal.core.JavaProject.buildStructure(JavaProject.java:535)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:266)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:597)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:328)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:314)
+	at org.eclipse.jdt.internal.core.JavaProject.getProjectCache(JavaProject.java:2479)
+	at org.eclipse.jdt.internal.core.JavaProjectElementInfo.newNameLookup(JavaProjectElementInfo.java:333)
+	at org.eclipse.jdt.internal.core.JavaProject.newNameLookup(JavaProject.java:2898)
+	at org.eclipse.jdt.internal.core.SearchableEnvironment.<init>(SearchableEnvironment.java:106)
+	at org.eclipse.jdt.internal.core.SearchableEnvironment.<init>(SearchableEnvironment.java:146)
+	at org.eclipse.jdt.internal.core.CancelableNameEnvironment.<init>(CancelableNameEnvironment.java:32)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:255)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:348)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:193)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:94)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:740)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:806)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1325)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:132)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:94)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:91)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.initialReconcile(JavaReconcilingStrategy.java:189)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.initialReconcile(CompositeReconcilingStrategy.java:125)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.initialReconcile(JavaCompositeReconcilingStrategy.java:139)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.initialProcess(MonoReconciler.java:100)
+	at org.eclipse.jdt.internal.ui.text.JavaReconciler.initialProcess(JavaReconciler.java:421)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:177)
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.common.source_2.28.0.v20230315-1321.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.ecore.source_2.34.0.v20230406-1203.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.language.ide.source_2.14.0.v20221117-1134.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.language.source_2.14.0.v20221117-1134.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.language.ui.source_2.14.0.v20221117-1134.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.launch.source_2.14.0.v20221117-1134.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.launch.ui.source_2.14.0.v20221117-1134.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.lib.source_2.14.0.v20221117-1134.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.runtime.source_2.14.0.v20221117-1134.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.core.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.ide.common.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.ide.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.lib.macro.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.lib.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.m2e.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.standalone.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.activities.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.builder.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.builder.standalone.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.buildship.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.common.types.edit.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.common.types.shared.jdt38.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.common.types.shared.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.common.types.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.common.types.ui.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ecore.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ide.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.java.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.junit4.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.logging.source_1.2.24.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.m2e.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.purexbase.ide.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.purexbase.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.purexbase.ui.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.smap.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.testing.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.codemining.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.codetemplates.ide.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.codetemplates.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.codetemplates.ui.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.ecore.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.shared.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.testing.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.util.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.ide.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.junit.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.lib.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.testing.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.ui.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.ui.testing.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xtext.generator.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xtext.ide.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xtext.ui.graph.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xtext.ui.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xtext.wizard.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 1 org.eclipse.pde.core 4 0 2023-07-11 09:53:34.993
+!MESSAGE Problems occurred getting the plug-ins in this container
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:53:34.994
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.common.source_2.28.0.v20230315-1321.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:53:34.995
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.ecore.source_2.34.0.v20230406-1203.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:53:34.996
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.language.ide.source_2.14.0.v20221117-1134.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:53:34.996
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.language.source_2.14.0.v20221117-1134.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:53:34.996
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.language.ui.source_2.14.0.v20221117-1134.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:53:34.997
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.launch.source_2.14.0.v20221117-1134.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:53:34.997
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.launch.ui.source_2.14.0.v20221117-1134.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:53:34.998
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.lib.source_2.14.0.v20221117-1134.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:53:34.998
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.runtime.source_2.14.0.v20221117-1134.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:53:34.998
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.core.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:53:34.999
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.ide.common.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:53:34.999
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.ide.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:53:34.999
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.lib.macro.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:53:34.999
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.lib.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:53:34.999
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.m2e.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:53:34.999
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.standalone.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:53:34.999
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.activities.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:53:34.999
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.builder.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:53:35.000
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.builder.standalone.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:53:35.000
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.buildship.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:53:35.000
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.common.types.edit.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:53:35.000
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.common.types.shared.jdt38.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:53:35.000
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.common.types.shared.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:53:35.000
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.common.types.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:53:35.000
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.common.types.ui.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:53:35.000
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ecore.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:53:35.000
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ide.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:53:35.000
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.java.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:53:35.001
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.junit4.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:53:35.001
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.logging.source_1.2.24.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:53:35.002
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.m2e.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:53:35.002
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.purexbase.ide.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:53:35.002
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.purexbase.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:53:35.004
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.purexbase.ui.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:53:35.004
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.smap.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:53:35.004
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:53:35.005
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.testing.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:53:35.005
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.codemining.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:53:35.005
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.codetemplates.ide.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:53:35.005
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.codetemplates.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:53:35.005
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.codetemplates.ui.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:53:35.005
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.ecore.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:53:35.005
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.shared.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:53:35.005
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:53:35.005
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.testing.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:53:35.005
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.util.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:53:35.006
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.ide.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:53:35.006
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.junit.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:53:35.006
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.lib.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:53:35.006
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:53:35.006
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.testing.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:53:35.006
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.ui.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:53:35.006
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.ui.testing.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:53:35.006
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xtext.generator.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:53:35.006
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xtext.ide.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:53:35.007
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xtext.ui.graph.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:53:35.014
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xtext.ui.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 09:53:35.015
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xtext.wizard.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:53:35.017
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.common.source_2.28.0.v20230315-1321.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:53:35.018
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.ecore.source_2.34.0.v20230406-1203.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:53:35.019
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.language.ide.source_2.14.0.v20221117-1134.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:53:35.021
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.language.source_2.14.0.v20221117-1134.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:53:35.022
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.language.ui.source_2.14.0.v20221117-1134.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:53:35.023
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.launch.source_2.14.0.v20221117-1134.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:53:35.025
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.launch.ui.source_2.14.0.v20221117-1134.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:53:35.027
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.lib.source_2.14.0.v20221117-1134.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:53:35.028
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.runtime.source_2.14.0.v20221117-1134.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:53:35.030
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.core.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:53:35.031
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.ide.common.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:53:35.032
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.ide.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:53:35.035
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.lib.macro.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:53:35.037
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.lib.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:53:35.038
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.m2e.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:53:35.039
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.standalone.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:53:35.040
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.activities.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:53:35.042
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.builder.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:53:35.043
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.builder.standalone.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:53:35.044
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.buildship.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:53:35.045
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.common.types.edit.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:53:35.047
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.common.types.shared.jdt38.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:53:35.048
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.common.types.shared.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:53:35.049
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.common.types.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:53:35.050
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.common.types.ui.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:53:35.051
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ecore.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:53:35.053
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ide.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:53:35.054
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.java.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:53:35.055
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.junit4.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:53:35.057
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.logging.source_1.2.24.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:53:35.059
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.m2e.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:53:35.060
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.purexbase.ide.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:53:35.061
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.purexbase.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:53:35.063
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.purexbase.ui.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:53:35.064
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.smap.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:53:35.065
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:53:35.067
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.testing.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:53:35.068
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.codemining.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:53:35.069
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.codetemplates.ide.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:53:35.070
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.codetemplates.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:53:35.071
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.codetemplates.ui.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:53:35.072
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.ecore.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:53:35.074
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.shared.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:53:35.076
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:53:35.077
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.testing.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:53:35.079
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.util.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:53:35.080
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.ide.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:53:35.081
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.junit.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:53:35.082
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.lib.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:53:35.083
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:53:35.084
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.testing.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:53:35.085
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.ui.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:53:35.086
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.ui.testing.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:53:35.087
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xtext.generator.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:53:35.090
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xtext.ide.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:53:35.092
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xtext.ui.graph.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:53:35.094
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xtext.ui.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 09:53:35.095
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xtext.wizard.source_2.31.0.v20230529-0659.jar
+!SESSION 2023-07-11 11:09:02.316 -----------------------------------------------
+eclipse.buildId=4.28.0.20230608-1200
+java.version=20.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.emf.ecore 2 0 2023-07-11 11:09:45.680
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY org.eclipse.jface 2 0 2023-07-11 11:09:57.567
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-07-11 11:09:57.567
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2023-07-11 11:10:07.378
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Chae Soobyung'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 11:10:16.656
+!MESSAGE The current target platform contains errors, open Window > Preferences > Plug-in Development > Target Platform for details.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Problems occurred getting the plug-ins in this container
+	at org.eclipse.pde.internal.core.PluginModelManager.getExternalBundles(PluginModelManager.java:697)
+	at org.eclipse.pde.internal.core.PluginModelManager.initializeTable(PluginModelManager.java:606)
+	at org.eclipse.pde.internal.core.PluginModelManager.targetReloaded(PluginModelManager.java:542)
+	at org.eclipse.pde.internal.core.RequiredPluginsInitializer.lambda$0(RequiredPluginsInitializer.java:33)
+	at org.eclipse.core.runtime.jobs.Job$2.run(Job.java:187)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.common.source_2.28.0.v20230315-1321.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.ecore.source_2.34.0.v20230406-1203.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.language.ide.source_2.14.0.v20221117-1134.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.language.source_2.14.0.v20221117-1134.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.language.ui.source_2.14.0.v20221117-1134.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.launch.source_2.14.0.v20221117-1134.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.launch.ui.source_2.14.0.v20221117-1134.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.lib.source_2.14.0.v20221117-1134.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.runtime.source_2.14.0.v20221117-1134.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.core.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.ide.common.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.ide.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.lib.macro.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.lib.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.m2e.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.standalone.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.activities.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.builder.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.builder.standalone.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.buildship.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.common.types.edit.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.common.types.shared.jdt38.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.common.types.shared.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.common.types.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.common.types.ui.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ecore.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ide.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.java.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.junit4.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.logging.source_1.2.24.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.m2e.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.purexbase.ide.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.purexbase.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.purexbase.ui.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.smap.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.testing.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.codemining.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.codetemplates.ide.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.codetemplates.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.codetemplates.ui.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.ecore.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.shared.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.testing.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.util.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.ide.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.junit.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.lib.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.testing.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.ui.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.ui.testing.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xtext.generator.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xtext.ide.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xtext.ui.graph.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xtext.ui.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xtext.wizard.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 1 org.eclipse.pde.core 4 0 2023-07-11 11:10:16.658
+!MESSAGE Problems occurred getting the plug-ins in this container
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 11:10:16.658
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.common.source_2.28.0.v20230315-1321.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 11:10:16.658
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.ecore.source_2.34.0.v20230406-1203.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 11:10:16.658
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.language.ide.source_2.14.0.v20221117-1134.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 11:10:16.658
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.language.source_2.14.0.v20221117-1134.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 11:10:16.658
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.language.ui.source_2.14.0.v20221117-1134.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 11:10:16.658
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.launch.source_2.14.0.v20221117-1134.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 11:10:16.658
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.launch.ui.source_2.14.0.v20221117-1134.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 11:10:16.658
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.lib.source_2.14.0.v20221117-1134.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 11:10:16.658
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.runtime.source_2.14.0.v20221117-1134.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 11:10:16.659
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.core.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 11:10:16.659
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.ide.common.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 11:10:16.659
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.ide.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 11:10:16.659
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.lib.macro.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 11:10:16.659
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.lib.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 11:10:16.659
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.m2e.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 11:10:16.659
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.standalone.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 11:10:16.659
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.activities.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 11:10:16.659
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.builder.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 11:10:16.659
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.builder.standalone.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 11:10:16.659
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.buildship.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 11:10:16.659
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.common.types.edit.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 11:10:16.659
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.common.types.shared.jdt38.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 11:10:16.659
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.common.types.shared.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 11:10:16.659
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.common.types.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 11:10:16.659
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.common.types.ui.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 11:10:16.659
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ecore.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 11:10:16.659
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ide.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 11:10:16.659
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.java.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 11:10:16.659
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.junit4.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 11:10:16.659
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.logging.source_1.2.24.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 11:10:16.659
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.m2e.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 11:10:16.659
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.purexbase.ide.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 11:10:16.659
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.purexbase.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 11:10:16.661
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.purexbase.ui.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 11:10:16.661
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.smap.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 11:10:16.661
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 11:10:16.661
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.testing.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 11:10:16.661
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.codemining.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 11:10:16.661
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.codetemplates.ide.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 11:10:16.662
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.codetemplates.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 11:10:16.662
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.codetemplates.ui.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 11:10:16.662
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.ecore.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 11:10:16.662
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.shared.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 11:10:16.663
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 11:10:16.663
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.testing.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 11:10:16.663
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.util.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 11:10:16.663
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.ide.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 11:10:16.663
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.junit.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 11:10:16.663
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.lib.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 11:10:16.663
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 11:10:16.663
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.testing.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 11:10:16.663
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.ui.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 11:10:16.663
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.ui.testing.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 11:10:16.663
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xtext.generator.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 11:10:16.663
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xtext.ide.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 11:10:16.663
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xtext.ui.graph.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 11:10:16.663
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xtext.ui.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 11:10:16.663
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xtext.wizard.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 11:10:16.665
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.common.source_2.28.0.v20230315-1321.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 11:10:16.667
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.ecore.source_2.34.0.v20230406-1203.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 11:10:16.668
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.language.ide.source_2.14.0.v20221117-1134.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 11:10:16.669
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.language.source_2.14.0.v20221117-1134.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 11:10:16.670
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.language.ui.source_2.14.0.v20221117-1134.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 11:10:16.671
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.launch.source_2.14.0.v20221117-1134.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 11:10:16.672
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.launch.ui.source_2.14.0.v20221117-1134.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 11:10:16.673
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.lib.source_2.14.0.v20221117-1134.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 11:10:16.674
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.runtime.source_2.14.0.v20221117-1134.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 11:10:16.675
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.core.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 11:10:16.676
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.ide.common.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 11:10:16.677
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.ide.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 11:10:16.678
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.lib.macro.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 11:10:16.679
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.lib.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 11:10:16.680
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.m2e.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 11:10:16.681
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.standalone.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 11:10:16.682
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.activities.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 11:10:16.683
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.builder.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 11:10:16.684
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.builder.standalone.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 11:10:16.685
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.buildship.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 11:10:16.687
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.common.types.edit.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 11:10:16.688
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.common.types.shared.jdt38.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 11:10:16.689
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.common.types.shared.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 11:10:16.690
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.common.types.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 11:10:16.691
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.common.types.ui.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 11:10:16.692
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ecore.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 11:10:16.694
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ide.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 11:10:16.695
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.java.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 11:10:16.696
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.junit4.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 11:10:16.697
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.logging.source_1.2.24.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 11:10:16.698
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.m2e.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 11:10:16.700
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.purexbase.ide.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 11:10:16.701
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.purexbase.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 11:10:16.703
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.purexbase.ui.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 11:10:16.704
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.smap.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 11:10:16.705
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 11:10:16.706
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.testing.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 11:10:16.707
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.codemining.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 11:10:16.708
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.codetemplates.ide.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 11:10:16.710
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.codetemplates.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 11:10:16.711
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.codetemplates.ui.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 11:10:16.712
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.ecore.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 11:10:16.713
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.shared.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 11:10:16.714
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 11:10:16.715
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.testing.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 11:10:16.716
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.util.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 11:10:16.718
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.ide.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 11:10:16.719
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.junit.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 11:10:16.720
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.lib.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 11:10:16.721
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 11:10:16.722
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.testing.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 11:10:16.723
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.ui.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 11:10:16.724
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.ui.testing.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 11:10:16.725
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xtext.generator.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 11:10:16.726
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xtext.ide.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 11:10:16.728
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xtext.ui.graph.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 11:10:16.729
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xtext.ui.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 11:10:16.730
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xtext.wizard.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.ui 4 0 2023-07-11 11:26:06.190
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at java.base/java.lang.System.arraycopy(Native Method)
+	at org.eclipse.jdt.internal.compiler.ast.LambdaExpression.copy(LambdaExpression.java:1132)
+	at org.eclipse.jdt.internal.compiler.ast.LambdaExpression.cachedResolvedCopy(LambdaExpression.java:995)
+	at org.eclipse.jdt.internal.compiler.ast.LambdaExpression.internalIsCompatibleWith(LambdaExpression.java:905)
+	at org.eclipse.jdt.internal.compiler.ast.LambdaExpression.isCompatibleWith(LambdaExpression.java:896)
+	at org.eclipse.jdt.internal.compiler.lookup.PolyTypeBinding.isCompatibleWith(PolyTypeBinding.java:43)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.parameterCompatibilityLevel(Scope.java:5098)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.parameterCompatibilityLevel(Scope.java:5062)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.computeCompatibleMethod(Scope.java:873)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.computeCompatibleMethod(Scope.java:798)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.findMethod0(Scope.java:1755)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.findMethod(Scope.java:1656)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.getMethod(Scope.java:3077)
+	at org.eclipse.jdt.internal.compiler.ast.MessageSend.findMethodBinding(MessageSend.java:1020)
+	at org.eclipse.jdt.internal.compiler.ast.MessageSend.resolveType(MessageSend.java:835)
+	at org.eclipse.jdt.internal.compiler.ast.Expression.resolve(Expression.java:1113)
+	at org.eclipse.jdt.internal.compiler.ast.Block.resolveUsing(Block.java:144)
+	at org.eclipse.jdt.internal.compiler.ast.TryStatement.resolve(TryStatement.java:1228)
+	at org.eclipse.jdt.internal.compiler.ast.Block.resolve(Block.java:131)
+	at org.eclipse.jdt.internal.compiler.ast.WhileStatement.resolve(WhileStatement.java:294)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolveStatements(AbstractMethodDeclaration.java:662)
+	at org.eclipse.jdt.internal.compiler.ast.MethodDeclaration.resolveStatements(MethodDeclaration.java:388)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolve(AbstractMethodDeclaration.java:571)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1506)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1631)
+	at org.eclipse.jdt.internal.compiler.ast.CompilationUnitDeclaration.resolve(CompilationUnitDeclaration.java:668)
+	at org.eclipse.jdt.internal.codeassist.SelectionEngine.select(SelectionEngine.java:1086)
+	at org.eclipse.jdt.internal.core.Openable.codeSelect(Openable.java:167)
+	at org.eclipse.jdt.internal.core.CompilationUnit.codeSelect(CompilationUnit.java:389)
+	at org.eclipse.jdt.internal.core.CompilationUnit.codeSelect(CompilationUnit.java:382)
+	at org.eclipse.jdt.internal.ui.javaeditor.JavaElementHyperlinkDetector.detectHyperlinks(JavaElementHyperlinkDetector.java:124)
+	at org.eclipse.ui.texteditor.HyperlinkDetectorRegistry$HyperlinkDetectorDelegate.detectHyperlinks(HyperlinkDetectorRegistry.java:81)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:289)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:262)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.mouseMove(HyperlinkManager.java:457)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:216)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4072)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+!SESSION 2023-07-11 13:12:21.865 -----------------------------------------------
+eclipse.buildId=4.28.0.20230608-1200
+java.version=20.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.emf.ecore 2 0 2023-07-11 13:13:06.223
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY org.eclipse.jface 2 0 2023-07-11 13:13:19.817
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-07-11 13:13:19.817
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2023-07-11 13:13:31.105
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Chae Soobyung'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 13:13:43.888
+!MESSAGE The current target platform contains errors, open Window > Preferences > Plug-in Development > Target Platform for details.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Problems occurred getting the plug-ins in this container
+	at org.eclipse.pde.internal.core.PluginModelManager.getExternalBundles(PluginModelManager.java:697)
+	at org.eclipse.pde.internal.core.PluginModelManager.initializeTable(PluginModelManager.java:606)
+	at org.eclipse.pde.internal.core.PluginModelManager.targetReloaded(PluginModelManager.java:542)
+	at org.eclipse.pde.internal.core.RequiredPluginsInitializer.lambda$0(RequiredPluginsInitializer.java:33)
+	at org.eclipse.core.runtime.jobs.Job$2.run(Job.java:187)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.common.source_2.28.0.v20230315-1321.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.ecore.source_2.34.0.v20230406-1203.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.language.ide.source_2.14.0.v20221117-1134.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.language.source_2.14.0.v20221117-1134.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.language.ui.source_2.14.0.v20221117-1134.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.launch.source_2.14.0.v20221117-1134.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.launch.ui.source_2.14.0.v20221117-1134.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.lib.source_2.14.0.v20221117-1134.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.runtime.source_2.14.0.v20221117-1134.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.core.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.ide.common.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.ide.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.lib.macro.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.lib.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.m2e.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.standalone.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.activities.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.builder.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.builder.standalone.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.buildship.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.common.types.edit.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.common.types.shared.jdt38.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.common.types.shared.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.common.types.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.common.types.ui.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ecore.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ide.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.java.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.junit4.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.logging.source_1.2.24.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.m2e.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.purexbase.ide.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.purexbase.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.purexbase.ui.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.smap.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.testing.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.codemining.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.codetemplates.ide.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.codetemplates.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.codetemplates.ui.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.ecore.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.shared.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.testing.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.util.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.ide.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.junit.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.lib.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.testing.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.ui.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.ui.testing.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xtext.generator.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xtext.ide.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xtext.ui.graph.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xtext.ui.source_2.31.0.v20230529-0659.jar
+Contains: File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xtext.wizard.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 1 org.eclipse.pde.core 4 0 2023-07-11 13:13:43.899
+!MESSAGE Problems occurred getting the plug-ins in this container
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 13:13:43.899
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.common.source_2.28.0.v20230315-1321.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 13:13:43.899
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.ecore.source_2.34.0.v20230406-1203.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 13:13:43.899
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.language.ide.source_2.14.0.v20221117-1134.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 13:13:43.899
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.language.source_2.14.0.v20221117-1134.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 13:13:43.899
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.language.ui.source_2.14.0.v20221117-1134.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 13:13:43.899
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.launch.source_2.14.0.v20221117-1134.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 13:13:43.899
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.launch.ui.source_2.14.0.v20221117-1134.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 13:13:43.899
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.lib.source_2.14.0.v20221117-1134.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 13:13:43.900
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.runtime.source_2.14.0.v20221117-1134.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 13:13:43.900
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.core.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 13:13:43.900
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.ide.common.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 13:13:43.900
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.ide.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 13:13:43.900
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.lib.macro.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 13:13:43.900
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.lib.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 13:13:43.900
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.m2e.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 13:13:43.900
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.standalone.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 13:13:43.900
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.activities.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 13:13:43.900
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.builder.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 13:13:43.900
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.builder.standalone.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 13:13:43.900
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.buildship.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 13:13:43.900
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.common.types.edit.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 13:13:43.900
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.common.types.shared.jdt38.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 13:13:43.900
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.common.types.shared.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 13:13:43.900
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.common.types.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 13:13:43.900
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.common.types.ui.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 13:13:43.900
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ecore.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 13:13:43.900
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ide.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 13:13:43.900
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.java.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 13:13:43.900
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.junit4.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 13:13:43.900
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.logging.source_1.2.24.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 13:13:43.900
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.m2e.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 13:13:43.900
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.purexbase.ide.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 13:13:43.900
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.purexbase.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 13:13:43.901
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.purexbase.ui.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 13:13:43.901
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.smap.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 13:13:43.901
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 13:13:43.901
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.testing.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 13:13:43.901
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.codemining.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 13:13:43.901
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.codetemplates.ide.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 13:13:43.901
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.codetemplates.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 13:13:43.901
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.codetemplates.ui.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 13:13:43.916
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.ecore.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 13:13:43.918
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.shared.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 13:13:43.928
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 13:13:43.929
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.testing.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 13:13:43.929
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.util.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 13:13:43.929
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.ide.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 13:13:43.929
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.junit.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 13:13:43.929
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.lib.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 13:13:43.929
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 13:13:43.929
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.testing.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 13:13:43.929
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.ui.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 13:13:43.929
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.ui.testing.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 13:13:43.929
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xtext.generator.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 13:13:43.929
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xtext.ide.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 13:13:43.929
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xtext.ui.graph.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 13:13:43.929
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xtext.ui.source_2.31.0.v20230529-0659.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2023-07-11 13:13:43.929
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xtext.wizard.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 13:13:43.932
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.common.source_2.28.0.v20230315-1321.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 13:13:43.935
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.ecore.source_2.34.0.v20230406-1203.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 13:13:43.937
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.language.ide.source_2.14.0.v20221117-1134.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 13:13:43.942
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.language.source_2.14.0.v20221117-1134.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 13:13:43.944
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.language.ui.source_2.14.0.v20221117-1134.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 13:13:43.946
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.launch.source_2.14.0.v20221117-1134.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 13:13:43.951
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.launch.ui.source_2.14.0.v20221117-1134.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 13:13:43.954
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.lib.source_2.14.0.v20221117-1134.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 13:13:43.955
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.emf.mwe2.runtime.source_2.14.0.v20221117-1134.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 13:13:43.956
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.core.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 13:13:43.959
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.ide.common.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 13:13:43.961
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.ide.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 13:13:43.962
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.lib.macro.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 13:13:43.963
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.lib.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 13:13:43.965
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.m2e.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 13:13:43.966
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtend.standalone.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 13:13:43.967
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.activities.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 13:13:43.968
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.builder.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 13:13:43.970
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.builder.standalone.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 13:13:43.971
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.buildship.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 13:13:43.972
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.common.types.edit.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 13:13:43.973
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.common.types.shared.jdt38.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 13:13:43.974
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.common.types.shared.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 13:13:43.975
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.common.types.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 13:13:43.977
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.common.types.ui.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 13:13:43.979
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ecore.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 13:13:43.980
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ide.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 13:13:43.981
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.java.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 13:13:43.982
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.junit4.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 13:13:43.983
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.logging.source_1.2.24.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 13:13:43.985
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.m2e.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 13:13:43.986
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.purexbase.ide.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 13:13:43.987
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.purexbase.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 13:13:43.988
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.purexbase.ui.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 13:13:43.989
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.smap.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 13:13:43.990
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 13:13:43.991
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.testing.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 13:13:43.992
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.codemining.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 13:13:43.994
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.codetemplates.ide.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 13:13:43.995
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.codetemplates.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 13:13:43.996
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.codetemplates.ui.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 13:13:43.998
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.ecore.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 13:13:43.999
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.shared.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 13:13:44.000
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 13:13:44.002
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.ui.testing.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 13:13:44.004
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.util.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 13:13:44.004
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.ide.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 13:13:44.006
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.junit.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 13:13:44.007
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.lib.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 13:13:44.008
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 13:13:44.009
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.testing.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 13:13:44.011
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.ui.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 13:13:44.012
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xbase.ui.testing.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 13:13:44.014
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xtext.generator.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 13:13:44.015
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xtext.ide.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 13:13:44.018
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xtext.ui.graph.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 13:13:44.019
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xtext.ui.source_2.31.0.v20230529-0659.jar
+
+!ENTRY org.eclipse.pde.core 4 0 2023-07-11 13:13:44.020
+!MESSAGE File does not exist: C:\Users\Chae Soobyung\Desktop\course\.p2\pool\plugins\org.eclipse.xtext.xtext.wizard.source_2.31.0.v20230529-0659.jar
