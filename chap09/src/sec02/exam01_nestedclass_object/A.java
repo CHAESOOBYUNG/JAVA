@@ -1,5 +1,6 @@
 package sec02.exam01_nestedclass_object;
 
+/* 바깥 클래스 */
 public class A {
 	A() { // 메소드
 		System.out.println("A객체가 생성됨");
@@ -25,7 +26,7 @@ public class A {
 		} - 인스턴스 맴버 클래스에서 정적 메소드 생성 불가 */
 	}
 	
-	static class C { // 정적 클래스
+	static class C { // 정적 멤버 클래스
 		int field1;
 		static int field2; // static class에서 생성 가능
 		C() {

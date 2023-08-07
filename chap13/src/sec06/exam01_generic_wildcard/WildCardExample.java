@@ -3,14 +3,17 @@ package sec06.exam01_generic_wildcard;
 import java.util.*;
 
 public class WildCardExample {
+	//모든 과정
 	public static void registerCourse(Course<?> course) { //모든 클래스 허용
 		System.out.println(course.getName() + "수강생: " + Arrays.toString(course.getStudents()));
 	}
 	
+	//학생 과정
 	public static void registerCourseStudent(Course<? extends Student> course) { //Student 클래스 상위 클래스 제한
 		System.out.println(course.getName() + "수강생: " + Arrays.toString(course.getStudents()));
 	}
-	
+
+	//직장인과 일반인 과정
 	public static void registerCourseWorker(Course<? super Worker> course) { //Worker 클래스 하위 클래스 제한
 		System.out.println(course.getName() + "수강생: " + Arrays.toString(course.getStudents()));
 	}

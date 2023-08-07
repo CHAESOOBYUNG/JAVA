@@ -1,11 +1,12 @@
 package sec13.exam02_constructor_access.package1;
 
 public class A {
-	A a1 = new A(true);
-	A a2 = new A();
-	A a3 = new A("문자열");
+	//필드
+	A a1 = new A(true); // (O)
+	A a2 = new A(); // (O)
+	A a3 = new A("문자열"); // (O)
 	
-	public A(boolean b) {}
-	A() {}
-	private A(String s) {}
+	public A(boolean b) {} //public 접근 제한
+	A() {} //default 접근 제한
+	private A(String s) {} //private 접근 제한
 }

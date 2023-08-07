@@ -6,6 +6,7 @@ public class BeepTask implements Runnable {
 	//Thread클래스로부터 직접 생성 - 스레드 실행 방법 1에서 활용  (BeepPrintExample2에서 사용)
 	@Override
 	public void run() {
+		//스레드 실행 내용
 		//비프음을 5번 반복해서 소리나게 하는 작업 (동시 실행)
 		Toolkit toolkit = Toolkit.getDefaultToolkit(); 
 		for(int i = 0; i < 5; i++) {

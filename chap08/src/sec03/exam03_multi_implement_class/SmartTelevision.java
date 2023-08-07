@@ -6,6 +6,7 @@ public class SmartTelevision implements Searchable, sec03.exam03_multi_implement
 
 	private int volume;
 
+	//RemoteControl의 추상 메소드에 대한 실제 메소드
 	@Override
 	public void turnOn() {
 		System.out.println("TV를 켭니다");
@@ -28,6 +29,7 @@ public class SmartTelevision implements Searchable, sec03.exam03_multi_implement
 		System.out.println("현재 TV볼륨: " + volume);
 	}
 
+	//Searchable의 추상 메소드에 대한 실체 메소드
 	@Override
 	public void search(String url) {
 		System.out.println(url + "을 검색합니다");

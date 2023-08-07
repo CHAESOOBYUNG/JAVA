@@ -7,7 +7,7 @@ public class SortingExample {
 	public static void main(String[] args) {
 		IntStream intStream = Arrays.stream(new int[] {5, 3, 2, 1, 4});
 		intStream
-			.sorted() //오름차순 정렬
+			.sorted() //숫자를 오름차순으로 정렬
 			.forEach(n -> System.out.print(n + ","));
 		System.out.println();
 		
@@ -18,12 +18,12 @@ public class SortingExample {
 		);
 		
 		studentList.stream()
-			.sorted() //점수 기준 오름차순 Student 정렬
+			.sorted() //정수 기준 오름차순 Student 정렬
 			.forEach(s -> System.out.print(s.getScore() + ","));
 		System.out.println();
 		
 		studentList.stream()
-			.sorted(Comparator.reverseOrder()) //점수 기준 내림차순 Student 정렬
+			.sorted(Comparator.reverseOrder()) //정수 기준 내림차순 Student 정렬
 			.forEach(s -> System.out.print(s.getScore() + ","));
 	}
 }

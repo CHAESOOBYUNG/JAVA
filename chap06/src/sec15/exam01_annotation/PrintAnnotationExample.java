@@ -5,11 +5,16 @@ import java.lang.reflect.*;
 public class PrintAnnotationExample {
 
 	public static void main(String[] args) {
-		Method[] declaredMethods = Service.class.getDeclaredMethods();
+		//Service 클래스로부터 메소드 정보를 얻음
+		Method[] declaredMethods = Service.class.getDeclaredMethods(); //Service 클래스에 선언된 메소드 얻기(리플렉션)
 		
+		//Method 객체를 하나씩 처리
 		for(Method method : declaredMethods) {
 			// System.out.println(method.getName());
+			
+			//PrintAnnotation이 적용되었는지 확인
 			if(method.isAnnotationPresent(PrintAnnotation.class)) {
+				//PrintAnnotation 객체 얻기
 				PrintAnnotation printAnnotation = method.getAnnotation(PrintAnnotation.class);
 				
 				//메소드 이름 출력

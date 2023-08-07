@@ -4,6 +4,7 @@ import java.util.function.*;
 
 public class SupplierExample {
 	public static void main(String[] args) {
+		//람다식
 		IntSupplier intSupplier = () -> { //리턴값 공급
 			int num = (int)(Math.random()*6) + 1;
 			return num;

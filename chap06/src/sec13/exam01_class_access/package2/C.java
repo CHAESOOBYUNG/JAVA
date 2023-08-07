@@ -1,4 +1,4 @@
-package sec13.exam01_class_access.package2;
+package sec13.exam01_class_access.package2; //패키지가 다름
 
 import sec13.exam01_class_access.package1.*;
 

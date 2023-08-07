@@ -4,9 +4,9 @@ public class IntExample {
 	
 	public static void main(String[] args) {
 		
-		int var1 = 10;
-		int var2 = 012; //8진수
-		int var3 = 0xA; //16진수
+		int var1 = 10; //10진수로 저장
+		int var2 = 012; //8진수로 저장
+		int var3 = 0xA; //16진수로 저장
 		
 		// int var4 = 10000000000; // 컴파일 에러
 		

@@ -9,7 +9,7 @@ public class ComputerExample {
 		System.out.println();
 		
 		Computer computer = new Computer();
-		System.out.println("원 면적: " + computer.areaCircle(r));
+		System.out.println("원 면적: " + computer.areaCircle(r)); //재정의된 메소드 호출
 	}
 	
 }

@@ -25,11 +25,11 @@ public class PredicateExample {
 	
 	public static void main(String[] args) {
 		//남자 평균 점수
-		double maleAvg = avg( t -> t.getSex().equals("남자"));
+		double maleAvg = avg( t -> t.getSex().equals("남자")); //Predicate<Student> 인스턴스 대입
 		System.out.println("남자 평균 점수: " + maleAvg);
 		
 		//여자 평균 점수
-		double femaleAvg = avg( t -> t.getSex().equals("여자"));
+		double femaleAvg = avg( t -> t.getSex().equals("여자")); //Predicate<Student> 인스턴스 대입
 		System.out.println("여자 평균 점수: " + femaleAvg);
 	}
 }

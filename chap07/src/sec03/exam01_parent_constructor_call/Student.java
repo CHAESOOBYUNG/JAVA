@@ -20,7 +20,7 @@ public class Student extends People{
 	} - 컴파일 오류 -> super(...) 먼저 선언*/
 	
 	public Student(String name, String ssn, int studentNo) {
-		super(name, ssn);
+		super(name, ssn); //부모 생성자 호출
 		this.studentNo = studentNo;
 		System.out.println("자식 객체 생성 완료");
 	}

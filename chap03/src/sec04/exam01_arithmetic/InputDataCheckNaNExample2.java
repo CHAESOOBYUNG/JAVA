@@ -9,12 +9,14 @@ public class InputDataCheckNaNExample2 {
 		
 		double currentBalance = 10000.0;
 		
-		if (Double.isNaN(val)) {
+		if (Double.isNaN(val)) { //NaN을 검사함
+			//NaN일 경우 실행되는 코드
 			System.out.println("NaN이 입력되어 처리할 수 없음"); 
 			val = 0.0;
 		}
 		
-		currentBalance += val; // currentBalance = currentBalance + val
+		currentBalance += val;  //currentBalance의 원래 값이 유지
+		// currentBalance = currentBalance + val
 		
 		System.out.println(currentBalance); 
 		

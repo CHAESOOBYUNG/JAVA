@@ -1,14 +1,19 @@
 package sec02.exam01_inheritance;
 
 public class DmbCellPhone extends CellPhone {
+	//필드
 	int channel;
 
+	//생성자
 	DmbCellPhone(String model, String color, int channel) {
+		//CellPhone으로부터 상속받은 필드
 		this.model = model;
 		this.color = color;
+		
 		this.channel = channel;
 	}
 
+	//메소드
 	void turnOnDmb() {
 		System.out.println("채널 " + channel + "번 DMB 방송을 수신합니다");
 	}

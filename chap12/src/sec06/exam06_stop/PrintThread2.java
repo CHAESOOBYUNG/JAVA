@@ -6,7 +6,7 @@ public class PrintThread2 extends Thread {
 		/* try {
 			while(true) {
 				System.out.println("실행중");
-				Thread.sleep(1);
+				Thread.sleep(1); //InterruptedException 발생
 			}
 		} catch (InterruptedException e) {} */
 		
@@ -20,7 +20,7 @@ public class PrintThread2 extends Thread {
 		while(true) {
 			System.out.println("실행중");
 			if(isInterrupted()) { //일시정지 X 상황 -> interrupt되었는지 여부 조사
-				break;
+				break; //while문을 빠져나옴
 			}
 		} 
 		System.out.println("자원 정리");

@@ -7,20 +7,20 @@ import java.util.stream.*;
 
 public class FromFileContentExample {
 	public static void main(String[] args) throws IOException {
-		Path path = Paths.get("src/sec02/stream_kind/linedata.txt"); //íŒŒì¼ ê²½ë¡œ ì •ë³´ë¥¼ ê°€ì§€ê³  ìˆëŠ” Path ê°ì²´ ìƒì„±
+		Path path = Paths.get("src/sec02/stream_kind/linedata.txt"); //ÆÄÀÏ °æ·Î Á¤º¸¸¦ °¡Áö°í ÀÖ´Â Path °´Ã¼ »ı¼º
 		Stream<String> stream;
 		
-		//File.Lines() ë©”ì†Œë“œ ì´ìš©
-		stream = Files.lines(path, Charset.defaultCharset()); //ìš´ì˜ì²´ì œ ê¸°ë³¸ ë¬¸ìì…‹
-		stream.forEach(System.out :: println); //ë©”ì†Œë“œ ì°¸ì¡° s -> System.out.println(s) ì™€ ë™ì¼
+		//File.lines() ¸Ş¼Òµå ÀÌ¿ë
+		stream = Files.lines(path, Charset.defaultCharset()); //¿î¿µÃ¼Á¦ ±âº» ¹®ÀÚ¼Â
+		stream.forEach(System.out :: println); //¸Ş¼Òµå ÂüÁ¶ s -> System.out.println(s) ¿Í µ¿ÀÏ
 		stream.close();
 		System.out.println();
 		
-		//BufferedReaderì˜ lines() ë©”ì†Œë“œ ì´ìš©
-		File file = path.toFile(); //pathë¡œë¶€í„° File ê°ì²´ë¥¼ ì–»ìŒ
-		FileReader fileReader = new FileReader(file); //FileReaderëŠ” 18ì¥ì—ì„œ í•™ìŠµ
-		BufferedReader br = new BufferedReader(fileReader); //BufferedReaderëŠ” 18ì¥ì—ì„œ í•™ìŠµ
+		//BufferedReaderÀÇ lines() ¸Ş¼Òµå ÀÌ¿ë
+		File file = path.toFile(); //path·ÎºÎÅÍ File °´Ã¼¸¦ ¾òÀ½
+		FileReader fileReader = new FileReader(file); //FileReader´Â 18Àå¿¡¼­ ÇĞ½À
+		BufferedReader br = new BufferedReader(fileReader); //BufferedReader´Â 18Àå¿¡¼­ ÇĞ½À
 		stream = br.lines();
-		stream.forEach(System.out :: println);
+		stream.forEach(System.out :: println); 
 	}
 }

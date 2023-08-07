@@ -5,9 +5,9 @@ public class PhoneExample {
 		// Phone phone = new Phone(); - Phone - 추상클래스 -> new 연산자 이용 인스턴스 생성 불가
 		
 		SmartPhone smartphone = new SmartPhone("채수병");
-		smartphone.turnOn();
+		smartphone.turnOn(); //Phone의 메소드
 		smartphone.InternetSearch();
-		smartphone.turnOff();
+		smartphone.turnOff(); //Phone의 메소드
 		
 	}
 }

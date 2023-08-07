@@ -15,7 +15,7 @@ public class RunnableExample {
 		Thread thread = new Thread(runnable);
 		thread.start(); */
 		
-		//람다식 사용1
+		//람다식 사용1 (스레드가 실행하는 코드)
 		/* Runnable runnable = () -> {
 			for(int i = 0; i < 10; i++) {
 				System.out.println(i);
@@ -25,7 +25,7 @@ public class RunnableExample {
 		Thread thread = new Thread(runnable);
 		thread.start(); */
 		
-		//람다식 사용 2
+		//람다식 사용 2 (스레드가 실행하는 코드)
 		Thread thread = new Thread(() -> {
 			for(int i = 0; i < 10; i++) {
 				System.out.println(i);

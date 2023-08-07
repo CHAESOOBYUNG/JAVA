@@ -55,7 +55,7 @@ public class DefaultMethodExtendsExample {
 		};
 		
 		ci3.method1();
-		ci3.method2();
+		ci3.method2(); //ChildInterface3 구현 객체의 method2() 호출
 		ci3.method3();
 	}
 	

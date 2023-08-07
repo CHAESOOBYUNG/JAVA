@@ -1,9 +1,13 @@
 package sec14.exam01_getter_setter;
 
 public class Car {
+	//필드
 	private int speed; //0
 	private boolean stop; //false
 	
+	//생성자
+	
+	//메소드
 	public int getSpeed() {
 		return speed;
 	} //getter

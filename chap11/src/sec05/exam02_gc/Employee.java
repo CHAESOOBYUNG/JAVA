@@ -8,6 +8,7 @@ public class Employee {
 		System.out.println("Employee(" + eno + ")가 메모리에 생성됨");
 	}
 	
+	//소멸자
 	@Override
 	protected void finalize() throws Throwable {
 		System.out.println("Employee(" + eno + ")가 메모리에서 제거됨");

@@ -1,4 +1,4 @@
-package sec13.exam03_field_method_access.package2;
+package sec13.exam03_field_method_access.package2; //패키지가 다름
 
 import sec13.exam03_field_method_access.package1.*;
 

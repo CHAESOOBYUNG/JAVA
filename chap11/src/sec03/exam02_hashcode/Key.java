@@ -21,9 +21,10 @@ public class Key {
 	}
 	
 	//hashCode() 메소드 재정의 -> ctrl + space -> hashCode() 클릭
+	//id가 동일한 문자열인 경우 같은 해시 코드를 리턴
 	@Override
 	public int hashCode() {
 		System.out.println("hashCode()");
-			return number;
+		return number;
 	}
 }

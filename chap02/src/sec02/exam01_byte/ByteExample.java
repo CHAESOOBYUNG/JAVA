@@ -11,5 +11,9 @@ public class ByteExample {
 		// byte var6 = 128; //컴파일 에러
 		
 		System.out.println(var1);
+		System.out.println(var2);
+		System.out.println(var3);
+		System.out.println(var4);
+		System.out.println(var5);
 	}
 }

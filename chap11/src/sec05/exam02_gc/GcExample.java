@@ -11,6 +11,6 @@ public class GcExample {
 		
 		System.out.print("emp가 최종적으로 참조하는 사원번호: ");
 		System.out.println(emp.eno);
-		System.gc();
+		System.gc(); //쓰레기 수집기 실행 요청
 	}
 }

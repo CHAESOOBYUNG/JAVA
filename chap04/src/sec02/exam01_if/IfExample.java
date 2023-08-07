@@ -12,7 +12,7 @@ public class IfExample {
 		
 		if(score < 90) {
 			System.out.println("점수가 90이하 입니다");
-			System.out.println("등급은 B입니다");
+			System.out.println("등급은 B입니다"); //if문과는 상관없는 실행문
 		}
 		
 	}

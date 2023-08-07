@@ -3,7 +3,7 @@ package sec02.exam02_switch;
 public class SwitchExample {
 
 	public static void main(String[] args) {
-		int num = (int)(Math.random()*6) + 1;
+		int num = (int)(Math.random()*6) + 1; //주사위 번호 하나 뽑기
 		
 		switch (num) {
 		case 1:

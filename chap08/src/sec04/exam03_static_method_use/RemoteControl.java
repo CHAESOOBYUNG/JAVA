@@ -21,7 +21,7 @@ public interface RemoteControl { // 인터페이스 선언
 	
 	// 정적 메소드
 	static void changeBattery() {
-		System.out.println("건진지를 교환합니다.");
+		System.out.println("건전지를 교환합니다.");
 	}
 	
 }

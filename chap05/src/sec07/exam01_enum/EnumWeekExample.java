@@ -1,20 +1,20 @@
 package sec07.exam01_enum;
 
-import java.util.Calendar;
+import java.util.Calendar; //Calendar 클래스는 java.util 패키지에 있으므로 import가 필요하다.
 
 public class EnumWeekExample {
 
 	public static void main(String[] args) {
 		
-		Week today = null;
+		Week today = null; //열거 타입 변수 선언
 		
 		Calendar Cal = Calendar.getInstance();
-		int week = Cal.get(Calendar.DAY_OF_WEEK);
+		int week = Cal.get(Calendar.DAY_OF_WEEK); //일(1) ~ 토(7)까지의 숫자를 리턴
 		System.out.println(week);
 		
 		switch (week) {
 		case 1:
-			today = Week.SUNDAY;
+			today = Week.SUNDAY; //열거 상수 대입
 			break;
 		case 2:
 			today = Week.MONDAY;

@@ -8,6 +8,7 @@ public class NullExample {
 		String str2 = null;
 		
 		System.out.println(Objects.requireNonNull(str1));
+		
 		try {
 		System.out.println(Objects.requireNonNull(str2));
 		} catch(NullPointerException e) {

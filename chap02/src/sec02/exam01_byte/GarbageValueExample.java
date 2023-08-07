@@ -19,7 +19,8 @@ public class GarbageValueExample {
 		for(int i = 0; i < 5; i++) {
 			var1++;
 			var2++;
-			System.out.println("var1: " + var1 + "\t" + "var2: " + var2);
+			System.out.println("var1: " + var1 + "\t" + "var2: " + var2); 
+			// "\t"는 tab만큼 칸을 띄어주는 역할을 함
 		} // for문으로 5번 반복 실행
 	}
 }

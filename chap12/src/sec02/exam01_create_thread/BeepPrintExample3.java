@@ -3,7 +3,7 @@ package sec02.exam01_create_thread;
 import java.awt.*;
 
 public class BeepPrintExample3 {
-	public static void main(String[] args) {
+	public static void main(String[] args) { //메인 스레드
 		//Thread 하위 클래스로부터 생성
 		
 		//스레드 실행 방법 1
@@ -22,7 +22,7 @@ public class BeepPrintExample3 {
 				}
 			}
 		};
-		thread.start();
+		thread.start();  //BeepThread
 		
 		//"띵" 문자열을 5번 출력하는 작업 (동시 실행)
 		for(int i = 0; i < 5; i++) {

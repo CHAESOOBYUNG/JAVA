@@ -9,7 +9,7 @@ public class StopFlagExample {
 			Thread.sleep(1000);
 		} catch (InterruptedException e) {}
 		
-		printThread1.setStop(true);
+		printThread1.setStop(true); //스레드를 종료시키기 위해 stop 필드를 true로 변경
 		
 	}
 }

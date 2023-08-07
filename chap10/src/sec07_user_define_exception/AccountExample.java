@@ -10,13 +10,13 @@ public class AccountExample {
 		try {
 			account.withdraw(30000);
 		} catch (BalanceInsufficientException e) {
-			String message = e.getMessage();
+			String message = e.getMessage(); //예외 메시지 얻기
 			/* if((message.equals("1004"))) {...}
 			if((message.equals("1005"))) {...} */
 			System.out.println(message);
 			System.out.println(e.toString()); //개발자에게 예외 코드 보여줌
 			System.out.println();
-			e.printStackTrace(); //예외처리, 디버깅 쉽게 하기 위해 모두 보여줌ㄴ
+			e.printStackTrace(); //예외처리, 디버깅 쉽게 하기 위해 모두 보여줌 (예외 추적 후 출력)
 		}
 	}
 }	

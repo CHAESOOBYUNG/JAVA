@@ -10,6 +10,7 @@ public class ResultByRunnableExample {
 		
 		System.out.println("[작업 처리 요청]");
 		class Task implements Runnable { //작업 정리
+			//외부 Result 객체를 필드에 저장
 			Result result; //외부 공유 객체 참조
 			Task(Result result) {
 				this.result = result;
@@ -21,10 +22,11 @@ public class ResultByRunnableExample {
 				for(int i = 1; i <= 10; i++) {
 					sum += i;
 				}
-				result.addValue(sum);
+				result.addValue(sum); //Result 객체에 작업 결과 저장
 			}
 		};
 		
+		//두 가지 작업 처리를 요청
 		//공유 객체(외부 객체)
 		Result result = new Result();
 		
@@ -34,8 +36,10 @@ public class ResultByRunnableExample {
 		
 		Future<Result> future1 = executorService.submit(task1, result);
 		Future<Result> future2 = executorService.submit(task2, result);
+		//
 		
 		try {
+			//두 가지 작업 결과를 취함 
 			result = future1.get();
 			result = future2.get();
 			System.out.println("[처리결과] " + result.accumValue);

@@ -18,10 +18,10 @@ public class TryCatchFinallyRuntimeExceptionExample {
 		} 
 		
 		try {
-		int value1 = Integer.parseInt(data1); // 문자값 입력 -> NumberFormatException 발생 가능
-		int value2 = Integer.parseInt(data2); // 문자값 입력 -> NumberFormatException 발생 가능
-		int result = value1 + value2;
-		System.out.println(data1 + "+" + data2 + "=" + result);
+			int value1 = Integer.parseInt(data1); // 문자값 입력 -> NumberFormatException 발생 가능
+			int value2 = Integer.parseInt(data2); // 문자값 입력 -> NumberFormatException 발생 가능
+			int result = value1 + value2;
+			System.out.println(data1 + "+" + data2 + "=" + result);
 		} catch(NumberFormatException e) {
 			System.out.println("숫자로 변환할 수 없습니다.");
 		} finally {

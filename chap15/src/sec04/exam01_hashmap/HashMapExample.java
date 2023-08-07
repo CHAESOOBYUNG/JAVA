@@ -28,11 +28,15 @@ public class HashMapExample {
 		}
 		System.out.println();
 		
-		map.remove("홍길동");
+		//객체 삭제
+		map.remove("홍길동"); //키로 MapEntry를 제거
 		System.out.println("총 Entry 수: " + map.size());
 		
+		//객체를 하나씩 처리
 		Set<Map.Entry<String, Integer>> entrySet = map.entrySet(); //Map.entrySet 얻기
 		Iterator<Map.Entry<String, Integer>> entryIterator = entrySet.iterator();
+		
+		//반복해서 Map.Entry를 얻고 키와 값을 얻어냄
 		while(entryIterator.hasNext()) {
 			Map.Entry<String, Integer> entry = entryIterator.next();
 			String key = entry.getKey();
@@ -42,7 +46,7 @@ public class HashMapExample {
 		System.out.println();
 		
 		//객체 전체 삭제
-		map.clear();
+		map.clear(); //모든 MapEntry 삭제
 		System.out.println("총 Entry 수: " + map.size());
 	}
 }

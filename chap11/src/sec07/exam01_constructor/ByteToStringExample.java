@@ -6,6 +6,9 @@ public class ByteToStringExample {
 		
 		String str1 = new String(bytes);
 		System.out.println(str1);
+		
+		String str2 = new String(bytes, 6 , 4); //(bytes, 74번 위치, 4개)
+		System.out.println(str2);
 	}
 	
 }

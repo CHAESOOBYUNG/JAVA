@@ -6,7 +6,7 @@ public class CheckValueBeforeCasting {
 		
 		int i = 125;
 		
-		if(i < Byte.MIN_VALUE || i > Byte.MAX_VALUE) { 
+		if(i < Byte.MIN_VALUE || i > Byte.MAX_VALUE) { //(i < -128) || (i > 127)
 			// Byte.MIN_VALUE = -128 / Byte.MAX_VALUE = 127 / || - or
 			System.out.println("byte타입으로 변환할 수 없습니다");
 			System.out.println("값을 다시 확인해주세요");

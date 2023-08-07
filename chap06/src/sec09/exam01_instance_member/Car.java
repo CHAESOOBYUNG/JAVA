@@ -1,14 +1,17 @@
 package sec09.exam01_instance_member;
 
 public class Car {
-	String model; //필드
+	//필드
+	String model; 
 	int speed;
 	
+	//생성자
 	Car(String model) {
 		this.model = model;
 	}
 	
-	void setSpeed(int speed) { //메소드
+	//메소드
+	void setSpeed(int speed) { 
 		this.speed = speed;
 	}
 	

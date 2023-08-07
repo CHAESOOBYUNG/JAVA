@@ -9,7 +9,7 @@ public class HashSetExample1 {
 		set.add("Java");
 		set.add("JDBC");
 		set.add("Servlet/JSP");
-		set.add("Java"); //동일한 객체는 중복 저장 x
+		set.add("Java"); //동일한 객체는 중복 저장 x ("Java"는 한 번만 저장됨)
 		set.add("iBATIS");
 		
 		int size = set.size();
@@ -21,8 +21,8 @@ public class HashSetExample1 {
 			System.out.println("\t" + element);
 		}
 		
-		set.remove("JDBC");
-		set.remove("iBATIS");
+		set.remove("JDBC"); //1개 객체 삭제
+		set.remove("iBATIS"); //1개 객체 삭제
 		
 		System.out.println("총 객체수: " + set.size()); //저장된 객체 수 얻기
 		
@@ -30,7 +30,7 @@ public class HashSetExample1 {
 			System.out.println("\t" + element);
 		}
 		
-		set.clear();
+		set.clear(); //모든 객체를 제거하고 비움
 		if(set.isEmpty()) {
 			System.out.println("비어 있음");
 		}

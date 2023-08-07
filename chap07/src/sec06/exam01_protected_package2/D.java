@@ -4,9 +4,9 @@ import sec06.exam01_protected_package1.*;
 
 public class D extends A {
 	public D() {
-		super();
-		this.field = "value";
-		this.method();
+		super(); // (O)
+		this.field = "value"; // (O)
+		this.method(); // (O)
 	}
 	
 	public void method() {

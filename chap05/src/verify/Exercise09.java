@@ -23,7 +23,7 @@ public class Exercise09 {
 				studentNum = scanner.nextInt();
 				scores = new int[studentNum];
 			} else if(selectNo == 2) {
-				for(int i = 0; i <scores.length;i++) {
+				for(int i = 0; i <scores.length; i++) {
 					System.out.print("scores[" + i + "]: ");
 					scores[i] = scanner.nextInt();
                  /*	int score = scanner.nextInt();

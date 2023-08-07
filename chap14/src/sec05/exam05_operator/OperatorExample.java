@@ -8,7 +8,7 @@ public class OperatorExample {
 	public static int maxOrMin(IntBinaryOperator operator) { //2개의 int 연산
 		int result = scores[0];
 		for(int score : scores) {
-			result = operator.applyAsInt(result, score);
+			result = operator.applyAsInt(result, score); //람다식{} 실행
 		}
 		return result;
 	}
@@ -16,6 +16,7 @@ public class OperatorExample {
 	public static void main(String[] args) {
 		//최대값 얻기
 		int max = maxOrMin(
+			//람다식 (큰값 리턴)
 			(a, b) -> {
 				if(a >= b) return a;
 				else return b;
@@ -25,6 +26,7 @@ public class OperatorExample {
 		
 		//최소값 얻기
 		int min = maxOrMin(
+			//람다식 (작은 값 리턴)
 			(a, b) -> {
 				if(a <= b) return a;
 				else return b;

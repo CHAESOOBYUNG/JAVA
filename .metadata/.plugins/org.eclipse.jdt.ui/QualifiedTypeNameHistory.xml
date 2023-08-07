@@ -1,19 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.nio.file.Files"/>
-    <fullyQualifiedTypeName name="java.nio.file.DirectoryStream"/>
-    <fullyQualifiedTypeName name="java.nio.file.FileSystems"/>
-    <fullyQualifiedTypeName name="java.nio.file.WatchKey"/>
-    <fullyQualifiedTypeName name="java.nio.file.WatchService"/>
     <fullyQualifiedTypeName name="java.nio.file.WatchEvent"/>
     <fullyQualifiedTypeName name="java.nio.file.WatchEvent.Kind"/>
     <fullyQualifiedTypeName name="sec02.exam04_watchservice.WatchServiceExample.WatchServiceThread"/>
     <fullyQualifiedTypeName name="java.nio.file.StandardWatchEventKinds"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.nio.ByteOrder"/>
     <fullyQualifiedTypeName name="javax.print.attribute.standard.PrinterState"/>
     <fullyQualifiedTypeName name="java.nio.IntBuffer"/>
-    <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="java.nio.file.StandardCopyOption"/>
     <fullyQualifiedTypeName name="java.nio.channels.FileChannel"/>
     <fullyQualifiedTypeName name="java.nio.file.Paths"/>
@@ -60,4 +53,11 @@
     <fullyQualifiedTypeName name="java.nio.ByteBuffer"/>
     <fullyQualifiedTypeName name="java.nio.charset.Charset"/>
     <fullyQualifiedTypeName name="java.net.InetSocketAddress"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.SecurityManager"/>
+    <fullyQualifiedTypeName name="java.lang.SecurityException"/>
+    <fullyQualifiedTypeName name="java.util.TimeZone"/>
 </qualifiedTypeNameHistroy>

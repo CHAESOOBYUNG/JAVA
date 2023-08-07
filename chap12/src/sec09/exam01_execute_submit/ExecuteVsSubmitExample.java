@@ -25,7 +25,7 @@ public class ExecuteVsSubmitExample {
 			Thread.sleep(10);
 		}
 		
-		executorService.shutdown();
+		executorService.shutdown(); //스레드풀 종료
 		
 	}
 }

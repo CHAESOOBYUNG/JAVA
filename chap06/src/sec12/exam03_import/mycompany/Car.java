@@ -12,6 +12,7 @@ import sec12.exam03_import.kumho.*;
 
 
 public class Car {
+	//필드
 	Engine engine = new Engine();
 	SnowTire tire1 = new SnowTire();
 	BigWidthTire tire2 = new BigWidthTire();

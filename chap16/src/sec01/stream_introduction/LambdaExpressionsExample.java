@@ -10,7 +10,9 @@ public class LambdaExpressionsExample {
 			new Student("채수병", 92)
 		);
 		
-		Stream<Student> stream = list.stream();
+		Stream<Student> stream = list.stream(); //스트림 받기
+		
+		//List 컬렉션에서 Student를 가져와 람다식의 매개값으로 제공
 		stream.forEach(s -> {
 			String name = s.getName();
 			int score = s.getScore();

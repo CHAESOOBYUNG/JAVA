@@ -1,6 +1,8 @@
 package sec05.exam01_anonymous_extends;
 
 public class Anonymous {
+	//필드 초기값으로 대입
+	//필드 선언과 초기값 대입
 	Person field = new Person() {
 		String studentNo;
 		void work() {
@@ -14,6 +16,8 @@ public class Anonymous {
 	};
 	
 	void method1() {
+		//로컬 변수값으로 대입
+		//로컬 변수 선언과 초기값 대입
 		Person localVar = new Person() {
 			String studentNo;
 			void walk() {
@@ -25,6 +29,7 @@ public class Anonymous {
 				walk();
 			};		
 		};
+		//로컬 변수 사용
 		localVar.wake();
 	}
 	

@@ -9,7 +9,8 @@ public class ThreadB extends Thread {
 	
 	@Override
 	public void run() {
-		for(int i = 0; i < 10; i++) { //공유 객체 methodB() - 10번 반복 노출 
+		//공유 객체 methodB() - 10번 반복 노출 
+		for(int i = 0; i < 10; i++) { 
 			workObject.methodB();
 		}
 	}

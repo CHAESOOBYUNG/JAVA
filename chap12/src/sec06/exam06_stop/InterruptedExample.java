@@ -9,6 +9,6 @@ public class InterruptedExample {
 			Thread.sleep(1000);
 		} catch (InterruptedException e) {}
 		
-		printThread2.interrupt();
+		printThread2.interrupt(); //스레드를 종료시키기 위해 InterruptedException을 발생시킴
 	}
 }	

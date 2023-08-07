@@ -18,6 +18,7 @@ public class TreeSetExample2 {
 		System.out.println();
 		
 		NavigableSet<Integer> ascendingSet = descendingSet.descendingSet();
+		
 		for(Integer score : ascendingSet) { //오름차순
 			System.out.print(score + " ");
 		}

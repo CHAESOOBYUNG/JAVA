@@ -1,9 +1,13 @@
 package sec02.exam01_inheritance;
 
 public class CellPhone {
+	//필드
 	String model;
 	String color;
 	
+	//생성자
+	
+	//메소드
 	void powerOn() {
 		System.out.println("전원을 켭니다");
 	}

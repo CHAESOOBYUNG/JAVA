@@ -9,6 +9,7 @@ public class Person implements Comparable<Person>{
 		this.age = age;
 	}
 	
+	//Comparable<Person> 오버라이딩
 	@Override
 	public int compareTo(Person o) { //오름차순
 		if(age<o.age) return -1;

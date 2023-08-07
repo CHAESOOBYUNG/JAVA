@@ -1,8 +1,12 @@
 package sec08.exam03_method_call;
 
 public class Car {
+	//필드
 	int speed;
 	
+	//생성자
+	
+	//메소드
 	int getSpeed() {
 		return speed;
 	}

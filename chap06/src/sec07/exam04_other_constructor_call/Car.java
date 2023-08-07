@@ -14,7 +14,7 @@ public class Car {
 		/* this.model = model;
 		this.color = null;
 		this.maxSpeed = 0; */
-		this(model, null, 0);
+		this(model, null, 0); //호출
 	}
 	
 	Car(String model, String color) {
@@ -25,7 +25,8 @@ public class Car {
 		System.out.println("Car(String model) 실행");
 	}
 	
-	Car(String model, String color, int maxSpeed) {
+	Car(String model, String color, int maxSpeed) { 
+		//공통 실행 코드
 		this.model = model;
 		this.color = color;
 		this.maxSpeed = maxSpeed;
